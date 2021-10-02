@@ -25,7 +25,7 @@ container_width = camera_get_view_width(view_camera[0]) - (dialog_indentation * 
 container_height = dialog_height;
 
 // Maximum text width
-text_width = container_width - (text_indentation * 2);
+text_width = container_width - (text_indentation * 8);
 text_x = container_x + text_indentation;
 text_y = container_y + text_indentation;
 
