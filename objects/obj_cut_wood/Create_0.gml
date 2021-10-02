@@ -6,3 +6,5 @@ hspeed = irandom(4);
 depth = 3;
 
 countdown = 300;
+
+obj_variable_handler.currency_amount += 1;

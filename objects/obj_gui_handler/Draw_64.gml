@@ -13,7 +13,7 @@ draw_set_valign(fa_top);
 
 draw_set_color(text_color);
 
-draw_text(x + 16 + edge_size , y + edge_size, "" + obj_variable_handler.current_currency + " " + obj_variable_handler.currency_amount);
+draw_text(x + 16 + edge_size , y + edge_size, "" + obj_variable_handler.current_currency + " " + string(obj_variable_handler.currency_amount));
 
 draw_set_halign(fa_right);
 draw_text(x + 1366 - 16 - edge_size, y + edge_size, "" + obj_variable_handler.current_objective);
