@@ -8,7 +8,7 @@ switch (current_event)
 		with(_inst)
 		{
 			title = "Warm greetings!";
-			text = "Long Live Postria!" + "\n" + "\n" + "We are delighted to hear that you want to build your business in our glorious country. We do not generally get involved in the businesses nor we want to regulate you as long as you pay the fair share." + "\n" + "We will be watching you with a great interest." + "\n" + "No business is small business in Postria." + "\n" + "Please be aware of the fact that reading letters is obligatory and ignoring them can be penalised up to 250 $ per second." + "\n" + "\n" + "Long Live Postria!";
+			text = "Long Live Postria!" + "\n" + "\n" + "We are delighted to hear that you want to build your business in our glorious country. We do not generally get involved in the businesses nor we want to regulate you as long as you pay the fair share." + "\n" + "We will be watching you with a great interest." + "\n" + "No business is small business in Postria." + "\n" + "\n" + "Obligatory information:" + "\n" + "Please be aware of the fact that reading letters is obligatory and ignoring them can be penalised up to 250 $ per second." + "\n" + "\n" + "Long Live Postria!";
 		}
 		
 		current_event += 1;
@@ -36,11 +36,27 @@ switch (current_event)
 	break;
 	
 	case 3:
-		
+		if obj_variable_handler.currency_amount > 500
+		{
+			current_event += 1;
+		}
 	break;
 	
 	case 4:
+		_inst = instance_create_depth(x, y, 0, obj_letter_envelope);
+		with(_inst)
+		{
+			title = "Friendly reminder";
+			text = "Long Live Postria!" + "\n" + "\n" + "This is just a friendly letter from the Tax Office. We are delighted to see how well your business is doing. Regulations now require you to share 50 % of your profit right away and then to share 25 % of your profit from now on as a tax in order to make sure you contribute fairly to the common wealth of our glorious country." + "\n" + "As we already mentioned - no business is small business in Postria. We support the growth of every business." + "\n" + "\n" + "Obligatory information:" + "\n" + "Please be aware of the fact that reading letters is obligatory and ignoring them can be penalised up to 250 $ per second." + "\n" + "\n" + "Long Live Postria!";
+		}
 		
+		_half_the_money = (obj_variable_handler.currency_amount / 2);
+		obj_variable_handler.currency_amount = _half_the_money;
+		
+		_effectivity_reducement = (obj_variable_handler.amount_per_second * 0.75);
+		obj_variable_handler.amount_per_second = _effectivity_reducement;
+		
+		current_event += 1;
 	break;
 	
 	case 5:

@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-currency_amount = 1200;
+currency_amount = 400;
 current_currency = "$";
 amount_per_second = 0;
 amount_multiplier = 1;
