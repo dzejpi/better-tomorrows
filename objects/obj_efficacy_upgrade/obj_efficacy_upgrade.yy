@@ -1,13 +1,13 @@
 {
-  "spriteId": {
-    "name": "spr_business_house",
-    "path": "sprites/spr_business_house/spr_business_house.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_upgrade_parent",
+    "path": "objects/obj_upgrade_parent/obj_upgrade_parent.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -20,15 +20,17 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Forest Assets",
-    "path": "folders/Objects/Game Assets/Forest Assets.yy",
+    "name": "Upgrades",
+    "path": "folders/Objects/Game Assets/Upgrades.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_business_house",
+  "name": "obj_efficacy_upgrade",
   "tags": [],
   "resourceType": "GMObject",
 }

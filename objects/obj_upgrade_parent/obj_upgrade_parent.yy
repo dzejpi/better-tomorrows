@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "spr_letter_envelope",
-    "path": "sprites/spr_letter_envelope/spr_letter_envelope.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -26,16 +23,16 @@
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":2,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Forest Assets",
-    "path": "folders/Objects/Game Assets/Forest Assets.yy",
+    "name": "Upgrades",
+    "path": "folders/Objects/Game Assets/Upgrades.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_letter_envelope",
+  "name": "obj_upgrade_parent",
   "tags": [],
   "resourceType": "GMObject",
 }

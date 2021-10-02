@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "spr_business_house",
-    "path": "sprites/spr_business_house/spr_business_house.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -20,15 +17,18 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Forest Assets",
-    "path": "folders/Objects/Game Assets/Forest Assets.yy",
+    "name": "Game Logic",
+    "path": "folders/Objects/Game Logic.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_business_house",
+  "name": "obj_upgrade_handler",
   "tags": [],
   "resourceType": "GMObject",
 }

@@ -31,8 +31,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Game Assets",
-    "path": "folders/Objects/Game Assets.yy",
+    "name": "Forest Assets",
+    "path": "folders/Objects/Game Assets/Forest Assets.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_letter_paper",
