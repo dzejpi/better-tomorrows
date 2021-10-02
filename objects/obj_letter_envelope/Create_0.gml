@@ -12,4 +12,4 @@ letter_spawned = false;
 
 depth = 2;
 
-tooltip = "Open letter.";
+tooltip = "Open the letter.";
