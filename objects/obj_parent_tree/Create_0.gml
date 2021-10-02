@@ -9,3 +9,5 @@ if irandom(1) = 1
 }
 
 tooltip = "Hold left mouse to cut down.";
+
+depth = 5;
