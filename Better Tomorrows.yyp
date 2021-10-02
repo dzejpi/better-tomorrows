@@ -27,6 +27,8 @@
     {"id":{"name":"spr_dialog_back","path":"sprites/spr_dialog_back/spr_dialog_back.yy",},"order":0,},
     {"id":{"name":"spr_second_logo","path":"sprites/spr_second_logo/spr_second_logo.yy",},"order":1,},
     {"id":{"name":"obj_window_size_handler","path":"objects/obj_window_size_handler/obj_window_size_handler.yy",},"order":0,},
+    {"id":{"name":"spr_clickable_widget_back","path":"sprites/spr_clickable_widget_back/spr_clickable_widget_back.yy",},"order":3,},
+    {"id":{"name":"obj_clickable_widget","path":"objects/obj_clickable_widget/obj_clickable_widget.yy",},"order":5,},
     {"id":{"name":"obj_sound_button","path":"objects/obj_sound_button/obj_sound_button.yy",},"order":2,},
     {"id":{"name":"obj_credits_starter","path":"objects/obj_credits_starter/obj_credits_starter.yy",},"order":0,},
     {"id":{"name":"spr_back_sky","path":"sprites/spr_back_sky/spr_back_sky.yy",},"order":2,},

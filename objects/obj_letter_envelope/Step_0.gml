@@ -42,8 +42,4 @@ if letter_opened
 	{
 		instance_destroy();
 	}
-} else
-{
-	x =  camera_get_view_x(view_camera[0]) + 928;
-	y =  camera_get_view_y(view_camera[0]) + 480;
 }

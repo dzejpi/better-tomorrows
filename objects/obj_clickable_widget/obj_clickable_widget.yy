@@ -1,16 +1,13 @@
 {
   "spriteId": {
-    "name": "spr_letter_envelope",
-    "path": "sprites/spr_letter_envelope/spr_letter_envelope.yy",
+    "name": "spr_clickable_widget_back",
+    "path": "sprites/spr_clickable_widget_back/spr_clickable_widget_back.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "obj_clickable_object",
-    "path": "objects/obj_clickable_object/obj_clickable_object.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -35,7 +32,7 @@
     "path": "folders/Objects/Game Assets.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_letter_envelope",
+  "name": "obj_clickable_widget",
   "tags": [],
   "resourceType": "GMObject",
 }
