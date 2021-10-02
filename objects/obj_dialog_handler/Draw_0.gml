@@ -15,7 +15,7 @@ if (char_current < legth)
 	if frac(char_current) = 0 
 	{
 		// Play typewriter sound once the new character appears
-		audio_play_sound(snd_typewriter, 10, false);
+		//audio_play_sound(snd_typewriter, 10, false);
 	}
 }
 
