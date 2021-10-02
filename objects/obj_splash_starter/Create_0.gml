@@ -5,6 +5,9 @@ instance_create_depth(x, y, 0, obj_window_size_handler);
 // Fade out
 instance_create_depth(x, y, 0, obj_game_start_fade_out);
 
+// Create variable holder
+instance_create_depth(x, y, 0, obj_variable_handler);
+
 // Variables that check whether the logo flashed fully or not
 displaying_splash = true;
 displayed_splash = false;
