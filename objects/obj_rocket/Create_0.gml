@@ -2,8 +2,10 @@
 // You can write your code in this editor
 rocket_speed = 15;
 
-impact_x = 1200;
-impact_y = 800;
+depth = 2;
+
+impact_x = 1000;
+impact_y = 1000;
 
 impacted = false;
 

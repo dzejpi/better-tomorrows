@@ -12,9 +12,9 @@ if irandom(1) = 1
 }
 
 hspeed = random_range(-7, 7);
-vspeed = random_range(-5, -2);
+vspeed = random_range(-5, 5);
 
-time_before_falling_down = 20;
-time_before_impact = 20;
+time_before_falling_down = 90;
+time_before_impact = ceil(random_range(60, 90));
 
 falling_down = false;
