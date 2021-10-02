@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="486"
+   height="96"
+   viewBox="0 0 128.5875 25.400001"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="ButtonsProject.svg"
+   inkscape:version="1.0.1 (c497b03c, 2020-09-10)">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.8835903"
+     inkscape:cx="210.54685"
+     inkscape:cy="43.959002"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     units="px" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Button 3 Disabled"
+     inkscape:groupmode="layer"
+     id="g923"
+     style="display:none"
+     sodipodi:insensitive="true">
+    <rect
+       style="fill:#e0e0e0;fill-opacity:1;stroke:#fafafa;stroke-width:1.32292;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect921"
+       width="123.47099"
+       height="20.367796"
+       x="2.3879485"
+       y="2.8093512"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+  </g>
+  <g
+     inkscape:label="Button 2 Selected"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:inline">
+    <rect
+       style="fill:#616161;fill-opacity:1;stroke:#fafafa;stroke-width:1.32292;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect833"
+       width="123.47099"
+       height="20.367796"
+       x="2.3879485"
+       y="2.8093512"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+  </g>
+  <g
+     inkscape:label="Button 1 Default"
+     inkscape:groupmode="layer"
+     id="g867"
+     sodipodi:insensitive="true"
+     style="display:none">
+    <rect
+       style="fill:#212121;stroke:#fafafa;stroke-width:1.32292;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect865"
+       width="123.47099"
+       height="20.367796"
+       x="2.3879485"
+       y="2.8093512"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+  </g>
+</svg>
