@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
-countdown = 20;
-depth = 4;
+vspeed = -5;
+hspeed = irandom(4);
 
-sawed = false;
+depth = 3;
+
+countdown = 300;

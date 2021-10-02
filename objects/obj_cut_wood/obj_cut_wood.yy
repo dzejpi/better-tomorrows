@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_clickable_widget_back",
-    "path": "sprites/spr_clickable_widget_back/spr_clickable_widget_back.yy",
+    "name": "spr_widget_wood",
+    "path": "sprites/spr_widget_wood/spr_widget_wood.yy",
   },
   "solid": false,
   "visible": true,
@@ -23,8 +23,6 @@
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":2,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -33,7 +31,7 @@
     "path": "folders/Objects/Game Assets/Clickable Widget.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_clickable_widget",
+  "name": "obj_cut_wood",
   "tags": [],
   "resourceType": "GMObject",
 }

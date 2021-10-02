@@ -1,6 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
-countdown = 20;
-depth = 4;
+if countdown > 0
+{
+	countdown -= 1;
+} else
+{
+	instance_destroy();
+}
 
-sawed = false;
+vspeed += 0.5;
