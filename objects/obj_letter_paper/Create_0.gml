@@ -12,3 +12,4 @@ letter_countdown = 300;
 tooltip = "Dismiss letter.";
 
 is_dismissed = false;
+is_shown = false;

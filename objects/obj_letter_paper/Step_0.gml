@@ -2,12 +2,21 @@
 // You can write your code in this editor
 if !is_dismissed
 {
-	if y > 32
+	x =  camera_get_view_x(view_camera[0]) + 928;
+	
+	if !is_shown
 	{
-		y -= 20;
+		if y > camera_get_view_y(view_camera[0]) + 32
+		{
+			y -= 20;
+		} else
+		{
+			is_shown = true;
+			y =  camera_get_view_y(view_camera[0]) + 32;
+		}	
 	} else
 	{
-		y = 32;
+		y =  camera_get_view_y(view_camera[0]) + 32;
 	}
 } else
 {
