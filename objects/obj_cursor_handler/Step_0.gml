@@ -13,6 +13,16 @@ if camera_get_view_y(view_camera[0]) < 0
 	camera_set_view_pos(view_camera[0], camera_get_view_x(view_camera[0]), 0);
 }
 
+// Fix view if it gets to the right or bottom position
+if camera_get_view_x(view_camera[0]) > 5464
+{
+	camera_set_view_pos(view_camera[0], 5464, camera_get_view_y(view_camera[0]));
+}
+if camera_get_view_y(view_camera[0]) > 3072
+{
+	camera_set_view_pos(view_camera[0], camera_get_view_x(view_camera[0]), 3072);
+}
+
 if mouse_check_button(mb_left)
 {
 	window_set_cursor(cr_none);
