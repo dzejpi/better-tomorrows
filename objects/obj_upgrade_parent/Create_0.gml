@@ -26,3 +26,5 @@ y_position = 0;
 font_indentation = 0;
 
 is_pressed = false;
+
+countdown_to_press = 180;

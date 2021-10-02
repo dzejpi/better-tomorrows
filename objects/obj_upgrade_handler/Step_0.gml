@@ -11,13 +11,13 @@ switch(current_house_upgrade)
 				upgrade_description = "First house upgrade.";
 				upgrade_price = 15;
 			}
-			efficacy_upgrade_shown = true;
+			house_upgrade_shown = true;
 		} 
 		
 		if !object_exists(obj_house_upgrade)
 		{
-			efficacy_upgrade_shown = false;
-			current_efficacy_upgrade += 1;
+			house_upgrade_shown = false;
+			current_house_upgrade += 1;
 		}
 	break;
 	
@@ -30,13 +30,13 @@ switch(current_house_upgrade)
 				upgrade_description = "Second house upgrade.";
 				upgrade_price = 100;
 			}
-			efficacy_upgrade_shown = true;
+			house_upgrade_shown = true;
 		} 
 		
 		if !object_exists(obj_house_upgrade)
 		{
-			efficacy_upgrade_shown = false;
-			current_efficacy_upgrade += 1;
+			house_upgrade_shown = false;
+			current_house_upgrade += 1;
 		}
 	break;
 	
@@ -49,13 +49,13 @@ switch(current_house_upgrade)
 				upgrade_description = "Third house upgrade.";
 				upgrade_price = 250;
 			}
-			efficacy_upgrade_shown = true;
+			house_upgrade_shown = true;
 		} 
 		
 		if !object_exists(obj_house_upgrade)
 		{
-			efficacy_upgrade_shown = false;
-			current_efficacy_upgrade += 1;
+			house_upgrade_shown = false;
+			current_house_upgrade += 1;
 		}
 	break;
 	
@@ -68,13 +68,13 @@ switch(current_house_upgrade)
 				upgrade_description = "Fourth house upgrade.";
 				upgrade_price = 1000;
 			}
-			efficacy_upgrade_shown = true;
+			house_upgrade_shown = true;
 		} 
 		
 		if !object_exists(obj_house_upgrade)
 		{
-			efficacy_upgrade_shown = false;
-			current_efficacy_upgrade += 1;
+			house_upgrade_shown = false;
+			current_house_upgrade += 1;
 		}
 	break;
 	
@@ -87,13 +87,13 @@ switch(current_house_upgrade)
 				upgrade_description = "Fifth house upgrade.";
 				upgrade_price = 10000;
 			}
-			efficacy_upgrade_shown = true;
+			house_upgrade_shown = true;
 		} 
 		
 		if !object_exists(obj_house_upgrade)
 		{
-			efficacy_upgrade_shown = false;
-			current_efficacy_upgrade += 1;
+			house_upgrade_shown = false;
+			current_house_upgrade += 1;
 		}
 	break;
 }
@@ -107,7 +107,7 @@ switch(current_efficacy_upgrade)
 			with(_first_eff_update)
 			{
 				upgrade_description = "First efficacy upgrade.";
-				upgrade_price = 1;
+				upgrade_price = 2;
 			}
 			efficacy_upgrade_shown = true;
 		} 
@@ -126,7 +126,7 @@ switch(current_efficacy_upgrade)
 			with(_second_eff_update)
 			{
 				upgrade_description = "Second efficacy upgrade.";
-				upgrade_price = 1;
+				upgrade_price = 22;
 			}
 			efficacy_upgrade_shown = true;
 		} 
@@ -145,7 +145,7 @@ switch(current_efficacy_upgrade)
 			with(_third_eff_update)
 			{
 				upgrade_description = "Third efficacy upgrade.";
-				upgrade_price = 1;
+				upgrade_price = 222;
 			}
 			efficacy_upgrade_shown = true;
 		} 
@@ -164,7 +164,7 @@ switch(current_efficacy_upgrade)
 			with(_fourth_eff_update)
 			{
 				upgrade_description = "Fourth efficacy upgrade.";
-				upgrade_price = 1;
+				upgrade_price = 2222;
 			}
 			efficacy_upgrade_shown = true;
 		} 
@@ -183,7 +183,7 @@ switch(current_efficacy_upgrade)
 			with(_fifth_eff_update)
 			{
 				upgrade_description = "Fifth efficacy upgrade.";
-				upgrade_price = 1;
+				upgrade_price = 22222;
 			}
 			efficacy_upgrade_shown = true;
 		} 
