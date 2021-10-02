@@ -5,4 +5,4 @@
 event_inherited();
 
 x_position = obj_business_house.x - 144;
-y_position = obj_business_house.y - 144;
+y_position = obj_business_house.y - 288;
