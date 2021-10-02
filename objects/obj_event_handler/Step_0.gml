@@ -28,6 +28,8 @@ switch (current_event)
 				text[4] = "Another option is to pick berries or shrooms.";
 				text[5] = "Happy businessing!";
 			}
+			obj_variable_handler.current_objective = "";
+			
 			current_event += 1;
 		}
 	break;
