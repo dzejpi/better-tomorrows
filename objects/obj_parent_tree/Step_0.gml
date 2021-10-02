@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if irandom(1) = 1
+if place_meeting(x, y, obj_cursor_handler)
 {
-	image_xscale = -1;
+	obj_cursor_handler.tooltip = tooltip;
 }

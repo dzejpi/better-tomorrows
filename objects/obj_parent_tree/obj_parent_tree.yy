@@ -1,15 +1,12 @@
 {
-  "spriteId": {
-    "name": "spr_tree_round",
-    "path": "sprites/spr_tree_round/spr_tree_round.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_parent_tree",
-    "path": "objects/obj_parent_tree/obj_parent_tree.yy",
+    "name": "obj_clickable_object",
+    "path": "objects/obj_clickable_object/obj_clickable_object.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -23,7 +20,10 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
@@ -31,7 +31,7 @@
     "path": "folders/Objects/Game Assets/Forest Assets.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_round_tree",
+  "name": "obj_parent_tree",
   "tags": [],
   "resourceType": "GMObject",
 }
