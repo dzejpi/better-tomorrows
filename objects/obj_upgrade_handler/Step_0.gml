@@ -10,6 +10,8 @@ switch(current_house_upgrade)
 			{
 				upgrade_description = "First house upgrade.";
 				upgrade_price = 15;
+				
+				increased_amount_per_second = 1;
 			}
 			house_upgrade_shown = true;
 		} 
@@ -29,6 +31,8 @@ switch(current_house_upgrade)
 			{
 				upgrade_description = "Second house upgrade.";
 				upgrade_price = 100;
+				
+				increased_amount_per_second = 5;
 			}
 			house_upgrade_shown = true;
 		} 
@@ -48,6 +52,8 @@ switch(current_house_upgrade)
 			{
 				upgrade_description = "Third house upgrade.";
 				upgrade_price = 250;
+				
+				increased_amount_per_second = 15;
 			}
 			house_upgrade_shown = true;
 		} 
@@ -67,6 +73,8 @@ switch(current_house_upgrade)
 			{
 				upgrade_description = "Fourth house upgrade.";
 				upgrade_price = 1000;
+				
+				increased_amount_per_second = 30;
 			}
 			house_upgrade_shown = true;
 		} 
@@ -86,6 +94,8 @@ switch(current_house_upgrade)
 			{
 				upgrade_description = "Fifth house upgrade.";
 				upgrade_price = 10000;
+				
+				increased_amount_per_second = 50;
 			}
 			house_upgrade_shown = true;
 		} 
@@ -108,6 +118,8 @@ switch(current_efficacy_upgrade)
 			{
 				upgrade_description = "First efficacy upgrade.";
 				upgrade_price = 2;
+				
+				increased_amount_multiplier = 0.1;
 			}
 			efficacy_upgrade_shown = true;
 		} 
@@ -127,6 +139,8 @@ switch(current_efficacy_upgrade)
 			{
 				upgrade_description = "Second efficacy upgrade.";
 				upgrade_price = 22;
+				
+				increased_amount_multiplier = 0.2;
 			}
 			efficacy_upgrade_shown = true;
 		} 
@@ -146,6 +160,8 @@ switch(current_efficacy_upgrade)
 			{
 				upgrade_description = "Third efficacy upgrade.";
 				upgrade_price = 222;
+				
+				increased_amount_multiplier = 0.3;
 			}
 			efficacy_upgrade_shown = true;
 		} 
@@ -165,6 +181,8 @@ switch(current_efficacy_upgrade)
 			{
 				upgrade_description = "Fourth efficacy upgrade.";
 				upgrade_price = 2222;
+				
+				increased_amount_multiplier = 0.4;
 			}
 			efficacy_upgrade_shown = true;
 		} 
@@ -184,6 +202,8 @@ switch(current_efficacy_upgrade)
 			{
 				upgrade_description = "Fifth efficacy upgrade.";
 				upgrade_price = 22222;
+				
+				increased_amount_multiplier = 2;
 			}
 			efficacy_upgrade_shown = true;
 		} 

@@ -32,6 +32,9 @@ if is_selectable
 			
 			obj_variable_handler.currency_amount -= upgrade_price;
 			is_pressed = true;
+			
+			obj_variable_handler.amount_per_second += increased_amount_per_second;
+			obj_variable_handler.amount_multiplier += increased_amount_multiplier;
 		}
 	}
 }

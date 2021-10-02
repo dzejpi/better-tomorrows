@@ -28,3 +28,6 @@ font_indentation = 0;
 is_pressed = false;
 
 countdown_to_press = 180;
+
+increased_amount_per_second = 0;
+increased_amount_multiplier = 1;
