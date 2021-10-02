@@ -8,7 +8,7 @@ switch (current_event)
 		with(_inst)
 		{
 			title = "Warm greetings!";
-			text = "Praise for the Postria!" + "\n" + "We are delighted to hear that you want to build your business in our glorious country. We do not generally get involved in the businesses nor we want to regulate you as long as you pay the fair share." + "\n" + "We will be watching you with great interest as no business is small business in Postria." + "\n" + "\n" + "Praise for the Postria!";
+			text = "Long Live Postria!" + "\n" + "\n" + "We are delighted to hear that you want to build your business in our glorious country. We do not generally get involved in the businesses nor we want to regulate you as long as you pay the fair share." + "\n" + "We will be watching you with a great interest." + "\n" + "No business is small business in Postria." + "\n" + "Please be aware of the fact that reading letters is obligatory and ignoring them can be penalised up to 250 $ per second." + "\n" + "\n" + "Live Long Postria!";
 		}
 		
 		current_event += 1;
@@ -22,13 +22,14 @@ switch (current_event)
 			with(_inst)
 			{
 				text[0] = "Hey! Skip to the next text by pressing Space.";
-				text[1] = "Time for business! Make money yourself in the left corner.";
-				text[2] = "You can buy upgrades which will appear above your house.";
-				text[3] = "You can also make money by cutting down trees";
-				text[4] = "Another option is to pick berries or shrooms.";
-				text[5] = "Happy businessing!";
+				text[1] = "Time for business! Look around by going into corners.";
+				text[2] = "Make money yourself in the left corner by cutting logs by clicking on them.";
+				text[3] = "You can eventually buy upgrades which appear above your house.";
+				text[4] = "Make some extra unregulated money by picking berries or mushrooms.";
+				text[5] = "Always read letters or you will be fined!";
+				text[6] = "Happy and stable business!";
 			}
-			obj_variable_handler.current_objective = "";
+			obj_variable_handler.current_objective = "Make money and explore!";
 			
 			current_event += 1;
 		}
