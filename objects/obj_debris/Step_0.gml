@@ -7,6 +7,7 @@ if time_before_falling_down > 0
 } else
 {
 	falling_down = true;
+	depth = 10;
 }
 
 if falling_down
