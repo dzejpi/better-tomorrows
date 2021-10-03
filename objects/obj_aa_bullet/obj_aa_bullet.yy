@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_rocket",
-    "path": "sprites/spr_rocket/spr_rocket.yy",
+    "name": "spr_aa_bullet",
+    "path": "sprites/spr_aa_bullet/spr_aa_bullet.yy",
   },
   "solid": false,
   "visible": true,
@@ -22,17 +22,16 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_aa_bullet","path":"objects/obj_aa_bullet/obj_aa_bullet.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_rocket","path":"objects/obj_rocket/obj_rocket.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Explosion",
-    "path": "folders/Objects/Game Assets/Explosion.yy",
+    "name": "AA",
+    "path": "folders/Objects/Game Assets/AA.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_rocket",
+  "name": "obj_aa_bullet",
   "tags": [],
   "resourceType": "GMObject",
 }

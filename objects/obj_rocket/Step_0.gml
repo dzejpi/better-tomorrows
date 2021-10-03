@@ -19,7 +19,14 @@ if abs(impact_x - x) <= 20
 
 if impacted
 {
-	instance_create_depth(x, y, 0, obj_impact);
-	instance_create_depth(x, y, 0, obj_explosion);
-	instance_destroy();
+	if shot_by_the_aa
+	{
+		instance_create_depth(x, y, 0, obj_explosion);
+		instance_destroy();
+	} else
+	{
+		instance_create_depth(x, y, 0, obj_impact);
+		instance_create_depth(x, y, 0, obj_explosion);
+		instance_destroy();
+	}
 }

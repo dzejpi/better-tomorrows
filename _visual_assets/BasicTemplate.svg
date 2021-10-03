@@ -50,11 +50,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.1247539"
-     inkscape:cx="348.20489"
-     inkscape:cy="80.842312"
+     inkscape:zoom="1.2663779"
+     inkscape:cx="32.290109"
+     inkscape:cy="335.86724"
      inkscape:document-units="px"
-     inkscape:current-layer="layer21"
+     inkscape:current-layer="layer25"
      inkscape:document-rotation="0"
      showgrid="true"
      units="px">
@@ -1436,6 +1436,65 @@ AK/vGv6ZmQ/dvSSNDgaWggAAAABJRU5ErkJggg==
        style="opacity:1;fill:#212121;fill-opacity:1;stroke:url(#linearGradient2388);stroke-width:1.32292;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        d="M 76.200002,21.166667 H 42.333334"
        id="path2380"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer25"
+     inkscape:label="Anti-aircraft">
+    <circle
+       style="opacity:1;fill:#212121;fill-opacity:1;stroke:#fafafa;stroke-width:1.32292;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path2680"
+       cx="-72.011353"
+       cy="102.01788"
+       r="4.2333336"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <circle
+       style="opacity:1;fill:#212121;fill-opacity:1;stroke:#fafafa;stroke-width:1.32292;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path2680-7"
+       cx="-33.866665"
+       cy="101.60001"
+       r="4.2333336"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="opacity:1;fill:#fafafa;fill-opacity:1;stroke:#fafafa;stroke-width:1.32292;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="M -38.100001,101.6 H -67.733335"
+       id="path2699"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="opacity:1;fill:#212121;fill-opacity:1;stroke:#fafafa;stroke-width:1.32292;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m -55.033335,88.900002 h 16.933334 v 4.233334 h -16.933334 z"
+       id="path2701"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="opacity:1;fill:#212121;fill-opacity:1;stroke:#fafafa;stroke-width:1.32292;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m -59.266668,101.6 v 4.23334"
+       id="path2703"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="opacity:1;fill:#212121;fill-opacity:1;stroke:#fafafa;stroke-width:1.32292;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m -42.333334,101.6 v 4.23334"
+       id="path2705"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="opacity:1;fill:#212121;fill-opacity:1;stroke:#fafafa;stroke-width:1.32292;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m -50.800001,101.6 v 4.23334"
+       id="path2707"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <circle
+       style="opacity:1;fill:#fafafa;fill-opacity:1;stroke:none;stroke-width:1.32292;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path2709"
+       cx="-35.983334"
+       cy="74.083336"
+       r="2.1166668"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
   </g>

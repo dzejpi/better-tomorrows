@@ -8,5 +8,6 @@ impact_x = 1000;
 impact_y = 1000;
 
 impacted = false;
+shot_by_the_aa = false;
 
 move_towards_point(impact_x, impact_y, rocket_speed);
