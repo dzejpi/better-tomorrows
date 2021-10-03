@@ -7,8 +7,6 @@ switch (current_event)
 		_inst = instance_create_depth(x, y, 0, obj_letter_envelope);
 		with(_inst)
 		{
-			
-			
 			title = "Warm greetings!";
 			text = "Long Live Postria!" + "\n" + "\n" + "We are delighted to hear that you want to build your business in our glorious country. We do not generally get involved in the businesses nor we want to regulate you as long as you pay the fair share." + "\n" + "We will be watching you with a great interest." + "\n" + "No business is small business in Postria." + "\n" + "\n" + "Obligatory information:" + "\n" + "Please be aware of the fact that reading letters is obligatory and ignoring them can be penalised up to 250 $ per second." + "\n" + "\n" + "Long Live Postria!";
 		}
