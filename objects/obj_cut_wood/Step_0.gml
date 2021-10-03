@@ -9,3 +9,4 @@ if countdown > 0
 }
 
 vspeed += 0.5;
+image_angle += wood_rotation;

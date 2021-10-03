@@ -9,3 +9,5 @@ countdown = 300;
 
 obj_variable_handler.currency_amount += 1;
 obj_variable_handler.currency_amount += obj_variable_handler.amount_per_second;
+
+wood_rotation = random_range(0, 5);
