@@ -10,6 +10,6 @@ letter_open = false;
 letter_opened = false;
 letter_spawned = false;
 
-depth = 2;
+depth = -4;
 
 tooltip = "Open the letter.";

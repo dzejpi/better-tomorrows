@@ -5,7 +5,7 @@ letter_text = "Test text";
 
 text_color = make_colour_rgb(33, 33, 33);
 
-depth = 3;
+depth = -5;
 
 letter_countdown = 300;
 

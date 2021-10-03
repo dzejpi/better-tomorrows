@@ -3,7 +3,7 @@
 vspeed = -5;
 hspeed = irandom(4);
 
-depth = 3;
+depth = -2;
 
 countdown = 300;
 

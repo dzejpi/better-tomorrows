@@ -56,14 +56,20 @@ switch (current_event)
 		obj_variable_handler.amount_per_second = _effectivity_reducement;
 		
 		current_event += 1;
+		countdown = 400;
 	break;
 	
 	case 5:
 		if !instance_exists(obj_letter_envelope) && !instance_exists(obj_letter_paper)
 		{
-			if obj_variable_handler.currency_amount > 450
+			if countdown > 0
 			{
+				countdown -= 1;
+			} else
+			{
+		
 				current_event += 1;
+				countdown = 600;
 			}
 		}
 	break;
@@ -71,7 +77,7 @@ switch (current_event)
 	case 6:
 		// UFO here
 		instance_create_depth(x - 60, y, 0, obj_ufo);
-		countdown = 300;
+		countdown = 600;
 		current_event += 1;
 	break;
 	
@@ -97,8 +103,6 @@ switch (current_event)
 		{
 			if obj_variable_handler.currency_amount > 780
 			{
-				current_event += 1;
-			
 				_rocket = instance_create_depth(camera_get_view_x(view_camera[0]) - 35, camera_get_view_x(view_camera[0]) - 350, 0, obj_rocket);
 				with(_rocket)
 				{
@@ -106,6 +110,7 @@ switch (current_event)
 					impact_y = camera_get_view_x(view_camera[0]) + camera_get_view_height(view_camera[0]) + 500;
 				}
 			
+				current_event += 1;
 				countdown = 600;
 			}
 		}
@@ -126,7 +131,7 @@ switch (current_event)
 			countdown = 0;
 			current_event += 1;
 			
-			countdown = 600;
+			countdown = 300;
 		}
 	break;
 	
@@ -148,7 +153,7 @@ switch (current_event)
 		with(_inst)
 		{
 			title = "Tax Office";
-			text = "Long Live Postria!" + "\n" + "\n" + "This is your Tax Office with the exciting news." + "\n" + "Postria is now in the higher demand of the wooden goods that you are currently making. In order to speed your production off, your taxes will be reduced until the demand is fully satisfied and the business is back to the usual." + "\n" + "Postria authorities are here to protect you and your valuable business." + "\n" + "\n" + "Obligatory information:" + "\n" + "Please be aware of the fact that reading letters is obligatory and ignoring them can be penalised up to 250 $ per second." + "\n" + "\n" + "Long Live Postria!";
+			text = "Long Live Postria!" + "\n" + "\n" + "This is your Tax Office with the exciting news." + "\n" + "Postria is now in the higher demand of the wooden goods that you are currently making. In order to speed your production up, your taxes will be reduced until the demand is fully satisfied and the business is back to the usual." + "\n" + "Postria authorities are here to protect you and your valuable business." + "\n" + "\n" + "Obligatory information:" + "\n" + "Please be aware of the fact that reading letters is obligatory and ignoring them can be penalised up to 250 $ per second." + "\n" + "\n" + "Long Live Postria!";
 		}
 		countdown = 0;
 		current_event += 1;
@@ -510,7 +515,7 @@ switch (current_event)
 			with(_inst)
 			{
 				title = "Security Department";
-				text = "Long Live Postria!" + "\n" + "\n" + "Due to the suspicion of the anti-state crime, you are required t come to the questioning immediately. Failure to show up will be punished into the full consequences of the law." + "\n" + "Please be aware of the fact that reading letters is obligatory and ignoring them can be penalised up to 250 $ per second." + "\n" + "\n" + "Long Live Postria!";
+				text = "Long Live Postria!" + "\n" + "\n" + "Due to the suspicion of the anti-state crimes, you are required to arrive into your closest security station for the questioning immediately. Failure to show up will be punished into the full extend of the law." + "\n" + "Please be aware of the fact that reading letters is obligatory and ignoring them can be penalised up to 250 $ per second." + "\n" + "\n" + "Long Live Postria!";
 			}
 			countdown = 120;
 			current_event += 1;
