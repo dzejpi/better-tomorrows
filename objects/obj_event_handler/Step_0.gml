@@ -496,6 +496,9 @@ switch (current_event)
 
 			obj_variable_handler.currency_amount = 0;
 			obj_variable_handler.amount_per_second = 0;
+			
+			// Destroy clickable widget.
+			instance_destroy(obj_clickable_widget);
 		}
 	break;
 	

@@ -1,6 +1,6 @@
 /// @description Insert description here
 // For testing. Change to 1 when finished.
-current_event = 30;
+current_event = 1;
 
 countdown = 0;
 
