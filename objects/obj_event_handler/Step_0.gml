@@ -259,22 +259,214 @@ switch (current_event)
 	break;
 	
 	case 16:
-		
+	
+		if countdown > 0
+		{
+			countdown -= 1;
+		} else
+		{
+			_sporadic_gunfire = instance_create_layer(180, 580, back_layer_id, obj_bullet_generator);
+			with(_sporadic_gunfire)
+			{
+				is_shooting_right = true;
+				fire_intensity = 150;
+			}
+			
+			current_event += 1;
+			countdown = 600;
+		}		
 	break;
 	
 	case 17:
-		
+		if countdown > 0
+		{
+			countdown -= 1;
+		} else
+		{
+			layer_set_visible(lay_id, true);
+			
+			_inst = instance_create_depth(x, y, 0, obj_letter_envelope);
+			with(_inst)
+			{
+				title = "Security Department";
+				text = "Long Live Postria!" + "\n" + "\n" + "Several citizens reported a sporadic gunfire on the Postria border." + "\n" + "The war on Aman was declared. All borders with Aman were closed and everybody seen crossing the border or trying to approach Postria border will be shot on sight." + "\n" + "Security Department wants to let you know that it will do everything to protect you and your business." + "\n" + "\n" + "Obligatory information:" + "\n" + "Please be aware of the fact that reading letters is obligatory and ignoring them can be penalised up to 250 $ per second." + "\n" + "\n" + "Long Live Postria!";
+			}
+			
+			current_event += 1;
+		}
 	break;
 	
 	case 18:
-		
+		if !instance_exists(obj_letter_envelope) && !instance_exists(obj_letter_paper)
+		{
+			_sporadic_gunfire_response = instance_create_layer(1247, 589, back_layer_id, obj_bullet_generator);
+			with(_sporadic_gunfire_response)
+			{
+				is_shooting_right = false;
+				fire_intensity = 100;
+			}
+			
+			// Rocket impact close to the home.
+			_rocket_close = instance_create_depth(600, (-400), 0, obj_rocket);
+			with(_rocket_close)
+			{
+				impact_x = 1340;
+				impact_y = 960;
+			}
+			
+			current_event += 1;
+			countdown = 600;
+		}
 	break;
 	
 	case 19:
+		if countdown > 0
+		{
+			countdown -= 1;
+		} else
+		{
+			_inst = instance_create_depth(x, y, 0, obj_letter_envelope);
+			with(_inst)
+			{
+				title = "Tax Office";
+				text = "Long Live Postria!" + "\n" + "\n" + "As informed by the Security Department, you are surely aware of the fact that the war state with Aman was declared." + "\n" + "Postria needs your resources for the war effort." + "\n" + "Postria authorities are forfeiting half of business assets. Be informed that some of your workers will most likely have to enlist." + "\n" + "\n" + "Obligatory information:" + "\n" + "Please be aware of the fact that reading letters is obligatory and ignoring them can be penalised up to 250 $ per second." + "\n" + "\n" + "Long Live Postria!";
+			}
+			countdown = 0;
+			current_event += 1;
 		
+			_half_the_money = (obj_variable_handler.currency_amount / 2);
+			obj_variable_handler.currency_amount = _half_the_money;
+			
+			_effectivity_reducement = (obj_variable_handler.amount_per_second * 0.5);
+			obj_variable_handler.amount_per_second = _effectivity_reducement;
+			
+			countdown = 600;
+		}
 	break;
 	
 	case 20:
+		if countdown > 0
+		{
+			countdown -= 1;
+		} else
+		{
+			_rocket_one = instance_create_depth(camera_get_view_x(view_camera[0]) - 350, camera_get_view_x(view_camera[0]) - 400, 0, obj_rocket);
+			with(_rocket_one)
+			{
+				impact_x = camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0]) + 900;
+				impact_y = camera_get_view_x(view_camera[0]) + camera_get_view_height(view_camera[0]) + 1200;
+			}
+			
+			_rocket_two = instance_create_depth(camera_get_view_x(view_camera[0]) + 80, camera_get_view_x(view_camera[0]) - 400, 0, obj_rocket);
+			with(_rocket_two)
+			{
+				impact_x = camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0]) + 500;
+				impact_y = camera_get_view_x(view_camera[0]) + camera_get_view_height(view_camera[0]) + 1350;
+			}
+			
+			_rocket_three = instance_create_depth(camera_get_view_x(view_camera[0]) - 100, camera_get_view_x(view_camera[0]) - 400, 0, obj_rocket);
+			with(_rocket_three)
+			{
+				impact_x = camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0]) + 400;
+				impact_y = camera_get_view_x(view_camera[0]) + camera_get_view_height(view_camera[0]) + 1040;
+			}
+			
+			_rocket_four = instance_create_depth(camera_get_view_x(view_camera[0]) + 256, camera_get_view_x(view_camera[0]) - 400, 0, obj_rocket);
+			with(_rocket_four)
+			{
+				impact_x = camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0]) + 845;
+				impact_y = camera_get_view_x(view_camera[0]) + camera_get_view_height(view_camera[0]) + 1300;
+			}
+			
+			_rocket_five = instance_create_depth(camera_get_view_x(view_camera[0]) + 69, camera_get_view_x(view_camera[0]) - 400, 0, obj_rocket);
+			with(_rocket_five)
+			{
+				impact_x = camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0]) + 490;
+				impact_y = camera_get_view_x(view_camera[0]) + camera_get_view_height(view_camera[0]) + 1250;
+			}
+		
+			current_event += 1;
+			countdown = 600;
+		}
+	break;
+	
+	case 21:
+		with(_sporadic_gunfire)
+		{
+			//is_shooting_right = false;
+			fire_intensity = 20;
+		}
+		
+		with(_sporadic_gunfire_response)
+		{
+			//is_shooting_right = false;
+			fire_intensity = 25;
+		}
+		
+		_gunfire_one = instance_create_layer(2593, 609, back_layer_id, obj_bullet_generator);
+		with(_gunfire_one)
+		{
+			//is_shooting_right = true;
+			fire_intensity = 30;
+		}
+		
+		_gunfire_two = instance_create_layer(3299, 579, back_layer_id, obj_bullet_generator);
+		with(_gunfire_two)
+		{
+			//is_shooting_right = true;
+			fire_intensity = 60;
+		}
+		
+		_gunfire_three = instance_create_layer(4672, 577, back_layer_id, obj_bullet_generator);
+		with(_gunfire_three)
+		{
+			//is_shooting_right = true;
+			fire_intensity = 20;
+		}
+		
+		_gunfire_four = instance_create_layer(4693, 579, back_layer_id, obj_bullet_generator);
+		with(_gunfire_four)
+		{
+			//is_shooting_right = true;
+			fire_intensity = 76;
+		}
+		
+		current_event += 1;
+	break;
+	
+	case 22:
+		
+	break;
+	
+	case 23:
+		
+	break;
+	
+	case 24:
+		
+	break;
+	
+	case 25:
+		
+	break;
+	
+	case 26:
+		
+	break;
+	
+	case 27:
+		
+	break;
+	
+	case 28:
+		
+	break;
+	
+	case 29:
+		
+	break;
+	
+	case 30:
 		
 	break;
 }
