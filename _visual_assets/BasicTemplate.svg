@@ -50,11 +50,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.2663779"
-     inkscape:cx="32.290109"
-     inkscape:cy="335.86724"
+     inkscape:zoom="1.3591908"
+     inkscape:cx="274.29663"
+     inkscape:cy="414.4655"
      inkscape:document-units="px"
-     inkscape:current-layer="layer25"
+     inkscape:current-layer="layer26"
      inkscape:document-rotation="0"
      showgrid="true"
      units="px">
@@ -81,7 +81,7 @@
      id="layer9"
      inkscape:label="Background"
      sodipodi:insensitive="true"
-     style="display:none">
+     style="display:inline">
     <rect
        style="opacity:1;fill:#1de9b6;fill-opacity:1;stroke:#212121;stroke-width:1.32292;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect1057"
@@ -94,7 +94,8 @@
      inkscape:groupmode="layer"
      id="layer14"
      inkscape:label="Back - Sky"
-     style="display:none">
+     style="display:inline"
+     sodipodi:insensitive="true">
     <circle
        style="opacity:1;fill:#212121;fill-opacity:1;stroke:#fafafa;stroke-width:1.32292;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path1283"
@@ -862,7 +863,8 @@
      inkscape:groupmode="layer"
      id="layer16"
      inkscape:label="Widget"
-     style="display:inline">
+     style="display:inline"
+     sodipodi:insensitive="true">
     <image
        width="67.733337"
        height="67.733337"
@@ -991,7 +993,8 @@ AK/vGv6ZmQ/dvSSNDgaWggAAAABJRU5ErkJggg==
   <g
      inkscape:groupmode="layer"
      id="layer17"
-     inkscape:label="Berries">
+     inkscape:label="Berries"
+     sodipodi:insensitive="true">
     <path
        style="opacity:1;fill:none;fill-opacity:1;stroke:#fafafa;stroke-width:1.32292;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 249.76667,110.06667 8.46667,-12.700001"
@@ -1111,7 +1114,8 @@ AK/vGv6ZmQ/dvSSNDgaWggAAAABJRU5ErkJggg==
      inkscape:groupmode="layer"
      id="layer18"
      inkscape:label="Mushroom Edible"
-     style="display:inline">
+     style="display:inline"
+     sodipodi:insensitive="true">
     <path
        style="opacity:1;fill:#212121;fill-opacity:1;stroke:#fafafa;stroke-width:1.32292;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 275.16667,105.83334 v 4.23333"
@@ -1128,9 +1132,10 @@ AK/vGv6ZmQ/dvSSNDgaWggAAAABJRU5ErkJggg==
   <g
      inkscape:groupmode="layer"
      id="layer19"
-     inkscape:label="Rocket">
+     inkscape:label="Rocket"
+     sodipodi:insensitive="true">
     <path
-       style="opacity:1;fill:#212121;fill-opacity:1;stroke:#fafafa;stroke-width:1.32291997;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="opacity:1;fill:#212121;fill-opacity:1;stroke:#fafafa;stroke-width:1.32292;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        d="M 38.100001,105.83334 H 29.633334 V 63.500002 l 4.233334,-16.933334 4.233333,16.933334 z"
        id="path2293"
        inkscape:export-xdpi="96"
@@ -1169,7 +1174,8 @@ AK/vGv6ZmQ/dvSSNDgaWggAAAABJRU5ErkJggg==
   <g
      inkscape:groupmode="layer"
      id="layer20"
-     inkscape:label="Debris">
+     inkscape:label="Debris"
+     sodipodi:insensitive="true">
     <path
        style="opacity:1;fill:#212121;fill-opacity:1;stroke:#fafafa;stroke-width:1.32292;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        d="m 309.03334,46.566665 -16.93333,16.93334 h 4.23333 l 12.7,-12.7 z"
@@ -1356,7 +1362,8 @@ AK/vGv6ZmQ/dvSSNDgaWggAAAABJRU5ErkJggg==
   <g
      inkscape:groupmode="layer"
      id="layer24"
-     inkscape:label="UFO">
+     inkscape:label="UFO"
+     sodipodi:insensitive="true">
     <path
        style="opacity:1;fill:#fafafa;fill-opacity:1;stroke:#212121;stroke-width:1.32292;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        d="m 84.666669,33.866668 c 0,0 8.466666,8.466666 21.166671,8.466666 12.7,0 21.16666,-8.466666 21.16666,-8.466666 h 8.46667 V 29.633334 H 127 c 0,0 -8.46666,-8.466667 -21.16666,-8.466667 -12.700004,0 -21.166671,8.466667 -21.166671,8.466667 h -8.466667 v 4.233334 z"
@@ -1442,7 +1449,8 @@ AK/vGv6ZmQ/dvSSNDgaWggAAAABJRU5ErkJggg==
   <g
      inkscape:groupmode="layer"
      id="layer25"
-     inkscape:label="Anti-aircraft">
+     inkscape:label="Anti-aircraft"
+     sodipodi:insensitive="true">
     <circle
        style="opacity:1;fill:#212121;fill-opacity:1;stroke:#fafafa;stroke-width:1.32292;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path2680"
@@ -1498,6 +1506,10 @@ AK/vGv6ZmQ/dvSSNDgaWggAAAABJRU5ErkJggg==
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
   </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer26"
+     inkscape:label="Fence" />
   <g
      inkscape:groupmode="layer"
      id="layer22"
@@ -1582,11 +1594,13 @@ AK/vGv6ZmQ/dvSSNDgaWggAAAABJRU5ErkJggg==
   <g
      inkscape:groupmode="layer"
      id="layer23"
-     inkscape:label="Crater 2" />
+     inkscape:label="Crater 2"
+     sodipodi:insensitive="true" />
   <g
      inkscape:groupmode="layer"
      id="g2218"
-     inkscape:label="Mushroom Inedible">
+     inkscape:label="Mushroom Inedible"
+     sodipodi:insensitive="true">
     <path
        style="opacity:1;fill:#212121;fill-opacity:1;stroke:#fafafa;stroke-width:1.32292;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 292.1,105.83334 v 4.23333"
@@ -1594,7 +1608,7 @@ AK/vGv6ZmQ/dvSSNDgaWggAAAABJRU5ErkJggg==
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <path
-       style="opacity:1;fill:#212121;fill-opacity:1;stroke:#fafafa;stroke-width:1.32291669;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:3.96875008,1.32291669;stroke-opacity:1;stroke-dashoffset:0"
+       style="opacity:1;fill:#212121;fill-opacity:1;stroke:#fafafa;stroke-width:1.32292;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:3.96875, 1.32292;stroke-dashoffset:0;stroke-opacity:1"
        d="m 287.86667,105.83334 c 0,0 0,-4.23335 4.23333,-4.23335 4.23334,0 4.23334,4.23335 4.23334,4.23335 z"
        id="path2216"
        inkscape:export-xdpi="96"
@@ -1642,7 +1656,7 @@ AK/vGv6ZmQ/dvSSNDgaWggAAAABJRU5ErkJggg==
      id="layer15"
      inkscape:label="Back - Pointy Hills"
      sodipodi:insensitive="true"
-     style="display:none">
+     style="display:inline">
     <path
        style="opacity:1;fill:#212121;fill-opacity:1;stroke:#fafafa;stroke-width:1.32292;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 283.63334,88.900002 -25.4,-8.466667 -33.86667,4.233334 38.1,12.7 z"

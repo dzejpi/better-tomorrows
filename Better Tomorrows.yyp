@@ -35,6 +35,7 @@
     {"id":{"name":"spr_menu_button","path":"sprites/spr_menu_button/spr_menu_button.yy",},"order":0,},
     {"id":{"name":"spr_tree","path":"sprites/spr_tree/spr_tree.yy",},"order":0,},
     {"id":{"name":"spr_mushroom_inedible","path":"sprites/spr_mushroom_inedible/spr_mushroom_inedible.yy",},"order":4,},
+    {"id":{"name":"spr_razor_fence","path":"sprites/spr_razor_fence/spr_razor_fence.yy",},"order":5,},
     {"id":{"name":"font_medium_text","path":"fonts/font_medium_text/font_medium_text.yy",},"order":5,},
     {"id":{"name":"obj_round_tree","path":"objects/obj_round_tree/obj_round_tree.yy",},"order":1,},
     {"id":{"name":"spr_dialog_back","path":"sprites/spr_dialog_back/spr_dialog_back.yy",},"order":0,},
