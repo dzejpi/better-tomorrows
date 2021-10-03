@@ -566,7 +566,7 @@ switch (current_event)
 			} else
 			{
 				// Bad ending
-				if obj_variable_handler.currency_amount < 150
+				if obj_variable_handler.currency_amount < 100
 				{
 					instance_create_depth(x, y, 0, obj_next_room_fade_in);
 					obj_next_room_fade_in.displayed_text = "Authorities found you.";
