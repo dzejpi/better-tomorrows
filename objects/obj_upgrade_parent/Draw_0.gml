@@ -25,4 +25,6 @@ if (position_meeting(mouse_x, mouse_y, id) || is_pressed)
 	draw_sprite(spr_upgrade_back, 2, x, y - font_indentation);
 }
 
+draw_sprite(symbol_sprite, 0, x , y);
+
 draw_set_alpha(1);
