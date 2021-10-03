@@ -25,10 +25,10 @@ if camera_get_view_y(view_camera[0]) > 3072
 
 if mouse_check_button(mb_left)
 {
-	window_set_cursor(cr_none);
+	//window_set_cursor(cr_none);
 } else
 {
-	window_set_cursor(cr_default);
+	//window_set_cursor(cr_default);
 }
 
 // Scrolling left

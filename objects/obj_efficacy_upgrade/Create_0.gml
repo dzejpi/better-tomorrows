@@ -4,5 +4,5 @@
 // Inherit the parent event
 event_inherited();
 
-x_position = obj_business_house.x + 144;
+x_position = obj_business_house.x + 104;
 y_position = obj_business_house.y - 288;
