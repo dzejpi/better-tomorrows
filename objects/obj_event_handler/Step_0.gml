@@ -15,7 +15,6 @@ switch (current_event)
 	break;
 	
 	case 2:
-	
 		if !instance_exists(obj_letter_envelope) && !instance_exists(obj_letter_paper)
 		{
 			_inst = instance_create_depth(x, y, 0, obj_dialog_handler);
@@ -60,9 +59,12 @@ switch (current_event)
 	break;
 	
 	case 5:
-		if obj_variable_handler.currency_amount > 450
+		if !instance_exists(obj_letter_envelope) && !instance_exists(obj_letter_paper)
 		{
-			current_event += 1;
+			if obj_variable_handler.currency_amount > 450
+			{
+				current_event += 1;
+			}
 		}
 	break;
 	
@@ -91,18 +93,21 @@ switch (current_event)
 	break;
 	
 	case 8:
-		if obj_variable_handler.currency_amount > 780
+		if !instance_exists(obj_letter_envelope) && !instance_exists(obj_letter_paper)
 		{
-			current_event += 1;
-			
-			_rocket = instance_create_depth(camera_get_view_x(view_camera[0]) - 35, camera_get_view_x(view_camera[0]) - 350, 0, obj_rocket);
-			with(_rocket)
+			if obj_variable_handler.currency_amount > 780
 			{
-				impact_x = camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0]) + 500;
-				impact_y = camera_get_view_x(view_camera[0]) + camera_get_view_height(view_camera[0]) + 500;
-			}
+				current_event += 1;
 			
-			countdown = 600;
+				_rocket = instance_create_depth(camera_get_view_x(view_camera[0]) - 35, camera_get_view_x(view_camera[0]) - 350, 0, obj_rocket);
+				with(_rocket)
+				{
+					impact_x = camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0]) + 500;
+					impact_y = camera_get_view_x(view_camera[0]) + camera_get_view_height(view_camera[0]) + 500;
+				}
+			
+				countdown = 600;
+			}
 		}
 	break;
 	
@@ -126,12 +131,15 @@ switch (current_event)
 	break;
 	
 	case 10:
-		if countdown > 0
+		if !instance_exists(obj_letter_envelope) && !instance_exists(obj_letter_paper)
 		{
-			countdown -= 1;
-		} else
-		{
-			current_event += 1;
+			if countdown > 0
+			{
+				countdown -= 1;
+			} else
+			{
+				current_event += 1;
+			}
 		}
 	break;
 	
@@ -152,50 +160,53 @@ switch (current_event)
 	break;
 	
 	case 12:
-		if countdown > 0
+		if !instance_exists(obj_letter_envelope) && !instance_exists(obj_letter_paper)
 		{
-			countdown -= 1;
-		} else
-		{
-			if obj_variable_handler.currency_amount > 780
+			if countdown > 0
 			{
-				_rocket_one = instance_create_depth(camera_get_view_x(view_camera[0]) - 350, camera_get_view_x(view_camera[0]) - 400, 0, obj_rocket);
-				with(_rocket_one)
+				countdown -= 1;
+			} else
+			{
+				if obj_variable_handler.currency_amount > 780
 				{
-					impact_x = camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0]) + 800;
-					impact_y = camera_get_view_x(view_camera[0]) + camera_get_view_height(view_camera[0]) + 1400;
-				}
+					_rocket_one = instance_create_depth(camera_get_view_x(view_camera[0]) - 350, camera_get_view_x(view_camera[0]) - 400, 0, obj_rocket);
+					with(_rocket_one)
+					{
+						impact_x = camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0]) + 800;
+						impact_y = camera_get_view_x(view_camera[0]) + camera_get_view_height(view_camera[0]) + 1400;
+					}
 				
-				_rocket_two = instance_create_depth(camera_get_view_x(view_camera[0]) + 80, camera_get_view_x(view_camera[0]) - 400, 0, obj_rocket);
-				with(_rocket_two)
-				{
-					impact_x = camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0]) + 400;
-					impact_y = camera_get_view_x(view_camera[0]) + camera_get_view_height(view_camera[0]) + 1650;
-				}
+					_rocket_two = instance_create_depth(camera_get_view_x(view_camera[0]) + 80, camera_get_view_x(view_camera[0]) - 400, 0, obj_rocket);
+					with(_rocket_two)
+					{
+						impact_x = camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0]) + 400;
+						impact_y = camera_get_view_x(view_camera[0]) + camera_get_view_height(view_camera[0]) + 1650;
+					}
 				
-				_rocket_three = instance_create_depth(camera_get_view_x(view_camera[0]) - 100, camera_get_view_x(view_camera[0]) - 400, 0, obj_rocket);
-				with(_rocket_three)
-				{
-					impact_x = camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0]) + 600;
-					impact_y = camera_get_view_x(view_camera[0]) + camera_get_view_height(view_camera[0]) + 1000;
-				}
+					_rocket_three = instance_create_depth(camera_get_view_x(view_camera[0]) - 100, camera_get_view_x(view_camera[0]) - 400, 0, obj_rocket);
+					with(_rocket_three)
+					{
+						impact_x = camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0]) + 600;
+						impact_y = camera_get_view_x(view_camera[0]) + camera_get_view_height(view_camera[0]) + 1000;
+					}
 				
-				_rocket_four = instance_create_depth(camera_get_view_x(view_camera[0]) + 256, camera_get_view_x(view_camera[0]) - 400, 0, obj_rocket);
-				with(_rocket_four)
-				{
-					impact_x = camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0]) + 645;
-					impact_y = camera_get_view_x(view_camera[0]) + camera_get_view_height(view_camera[0]) + 1400;
-				}
+					_rocket_four = instance_create_depth(camera_get_view_x(view_camera[0]) + 256, camera_get_view_x(view_camera[0]) - 400, 0, obj_rocket);
+					with(_rocket_four)
+					{
+						impact_x = camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0]) + 645;
+						impact_y = camera_get_view_x(view_camera[0]) + camera_get_view_height(view_camera[0]) + 1400;
+					}
 				
-				_rocket_five = instance_create_depth(camera_get_view_x(view_camera[0]) + 69, camera_get_view_x(view_camera[0]) - 400, 0, obj_rocket);
-				with(_rocket_five)
-				{
-					impact_x = camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0]) + 500;
-					impact_y = camera_get_view_x(view_camera[0]) + camera_get_view_height(view_camera[0]) + 1250;
-				}
+					_rocket_five = instance_create_depth(camera_get_view_x(view_camera[0]) + 69, camera_get_view_x(view_camera[0]) - 400, 0, obj_rocket);
+					with(_rocket_five)
+					{
+						impact_x = camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0]) + 500;
+						impact_y = camera_get_view_x(view_camera[0]) + camera_get_view_height(view_camera[0]) + 1250;
+					}
 			
-				current_event += 1;
-				countdown = 600;
+					current_event += 1;
+					countdown = 600;
+				}
 			}
 		}
 	break;
@@ -257,22 +268,24 @@ switch (current_event)
 	break;
 	
 	case 16:
-	
-		if countdown > 0
+		if !instance_exists(obj_letter_envelope) && !instance_exists(obj_letter_paper)
 		{
-			countdown -= 1;
-		} else
-		{
-			_sporadic_gunfire = instance_create_layer(180, 580, back_layer_id, obj_bullet_generator);
-			with(_sporadic_gunfire)
+			if countdown > 0
 			{
-				is_shooting_right = true;
-				fire_intensity = 150;
-			}
+				countdown -= 1;
+			} else
+			{
+				_sporadic_gunfire = instance_create_layer(180, 580, back_layer_id, obj_bullet_generator);
+				with(_sporadic_gunfire)
+				{
+					is_shooting_right = true;
+					fire_intensity = 150;
+				}
 			
-			current_event += 1;
-			countdown = 600;
-		}		
+				current_event += 1;
+				countdown = 600;
+			}
+		}
 	break;
 	
 	case 17:
@@ -343,48 +356,51 @@ switch (current_event)
 	break;
 	
 	case 20:
-		if countdown > 0
+		if !instance_exists(obj_letter_envelope) && !instance_exists(obj_letter_paper)
 		{
-			countdown -= 1;
-		} else
-		{
-			_rocket_one = instance_create_depth(camera_get_view_x(view_camera[0]) - 350, camera_get_view_x(view_camera[0]) - 400, 0, obj_rocket);
-			with(_rocket_one)
+			if countdown > 0
 			{
-				impact_x = camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0]) + 900;
-				impact_y = camera_get_view_x(view_camera[0]) + camera_get_view_height(view_camera[0]) + 1200;
-			}
+				countdown -= 1;
+			} else
+			{
+				_rocket_one = instance_create_depth(camera_get_view_x(view_camera[0]) - 350, camera_get_view_x(view_camera[0]) - 400, 0, obj_rocket);
+				with(_rocket_one)
+				{
+					impact_x = camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0]) + 900;
+					impact_y = camera_get_view_x(view_camera[0]) + camera_get_view_height(view_camera[0]) + 1200;
+				}
 			
-			_rocket_two = instance_create_depth(camera_get_view_x(view_camera[0]) + 80, camera_get_view_x(view_camera[0]) - 400, 0, obj_rocket);
-			with(_rocket_two)
-			{
-				impact_x = camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0]) + 500;
-				impact_y = camera_get_view_x(view_camera[0]) + camera_get_view_height(view_camera[0]) + 1350;
-			}
+				_rocket_two = instance_create_depth(camera_get_view_x(view_camera[0]) + 80, camera_get_view_x(view_camera[0]) - 400, 0, obj_rocket);
+				with(_rocket_two)
+				{
+					impact_x = camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0]) + 500;
+					impact_y = camera_get_view_x(view_camera[0]) + camera_get_view_height(view_camera[0]) + 1350;
+				}
 			
-			_rocket_three = instance_create_depth(camera_get_view_x(view_camera[0]) - 100, camera_get_view_x(view_camera[0]) - 400, 0, obj_rocket);
-			with(_rocket_three)
-			{
-				impact_x = camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0]) + 400;
-				impact_y = camera_get_view_x(view_camera[0]) + camera_get_view_height(view_camera[0]) + 1040;
-			}
+				_rocket_three = instance_create_depth(camera_get_view_x(view_camera[0]) - 100, camera_get_view_x(view_camera[0]) - 400, 0, obj_rocket);
+				with(_rocket_three)
+				{
+					impact_x = camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0]) + 400;
+					impact_y = camera_get_view_x(view_camera[0]) + camera_get_view_height(view_camera[0]) + 1040;
+				}
 			
-			_rocket_four = instance_create_depth(camera_get_view_x(view_camera[0]) + 256, camera_get_view_x(view_camera[0]) - 400, 0, obj_rocket);
-			with(_rocket_four)
-			{
-				impact_x = camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0]) + 845;
-				impact_y = camera_get_view_x(view_camera[0]) + camera_get_view_height(view_camera[0]) + 1300;
-			}
+				_rocket_four = instance_create_depth(camera_get_view_x(view_camera[0]) + 256, camera_get_view_x(view_camera[0]) - 400, 0, obj_rocket);
+				with(_rocket_four)
+				{
+					impact_x = camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0]) + 845;
+					impact_y = camera_get_view_x(view_camera[0]) + camera_get_view_height(view_camera[0]) + 1300;
+				}
 			
-			_rocket_five = instance_create_depth(camera_get_view_x(view_camera[0]) + 69, camera_get_view_x(view_camera[0]) - 400, 0, obj_rocket);
-			with(_rocket_five)
-			{
-				impact_x = camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0]) + 490;
-				impact_y = camera_get_view_x(view_camera[0]) + camera_get_view_height(view_camera[0]) + 1250;
-			}
+				_rocket_five = instance_create_depth(camera_get_view_x(view_camera[0]) + 69, camera_get_view_x(view_camera[0]) - 400, 0, obj_rocket);
+				with(_rocket_five)
+				{
+					impact_x = camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0]) + 490;
+					impact_y = camera_get_view_x(view_camera[0]) + camera_get_view_height(view_camera[0]) + 1250;
+				}
 		
-			current_event += 1;
-			countdown = 600;
+				current_event += 1;
+				countdown = 600;
+			}
 		}
 	break;
 	
