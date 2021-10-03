@@ -8,8 +8,8 @@ switch(current_house_upgrade)
 			_first_house_update = instance_create_depth(x, y, 0, obj_house_upgrade);
 			with(_first_house_update)
 			{
-				upgrade_description = "Hire a worker. Brings extra 1 $/s.";
-				upgrade_price = 15;
+				upgrade_description = "Hire a worker. +1 $/s.";
+				upgrade_price = 5;
 				
 				increased_amount_per_second = 1;
 				
@@ -31,7 +31,7 @@ switch(current_house_upgrade)
 			_second_house_update = instance_create_depth(x, y, 0, obj_house_upgrade);
 			with(_second_house_update)
 			{
-				upgrade_description = "Hire more workers. Brings extra 5 $/s.";
+				upgrade_description = "Hire more workers. +5 $/s.";
 				upgrade_price = 100;
 				
 				increased_amount_per_second = 5;
@@ -54,7 +54,7 @@ switch(current_house_upgrade)
 			_third_house_update = instance_create_depth(x, y, 0, obj_house_upgrade);
 			with(_third_house_update)
 			{
-				upgrade_description = "New equipment. Brings extra 15 $/s.";
+				upgrade_description = "New equipment. +25 $/s.";
 				upgrade_price = 250;
 				
 				increased_amount_per_second = 15;
@@ -77,7 +77,7 @@ switch(current_house_upgrade)
 			_fourth_house_update = instance_create_depth(x, y, 0, obj_house_upgrade);
 			with(_fourth_house_update)
 			{
-				upgrade_description = "Double the output. Brings extra 30 $/s.";
+				upgrade_description = "Double the output. +50 $/s.";
 				upgrade_price = 1000;
 				
 				increased_amount_per_second = 30;
@@ -99,8 +99,8 @@ switch(current_house_upgrade)
 			_fifth_house_update = instance_create_depth(x, y, 0, obj_house_upgrade);
 			with(_fifth_house_update)
 			{
-				upgrade_description = "Max potential. Brings extra 50 $/s.";
-				upgrade_price = 10000;
+				upgrade_description = "Maximalize your potential. +75 $/s.";
+				upgrade_price = 5000;
 				
 				increased_amount_per_second = 50;
 				symbol_sprite = spr_upgrade_house_5;
@@ -121,10 +121,10 @@ switch(current_house_upgrade)
 			_fifth_house_update = instance_create_depth(x, y, 0, obj_house_upgrade);
 			with(_fifth_house_update)
 			{
-				upgrade_description = "Get into mushroom business. Brings extra 75 $/s";
-				upgrade_price = 10000;
+				upgrade_description = "Mushroom business. +100 $/s";
+				upgrade_price = 50000;
 				
-				increased_amount_per_second = 75;
+				increased_amount_per_second = 100;
 				symbol_sprite = spr_upgrade_house_6;
 			}
 			house_upgrade_shown = true;
@@ -143,10 +143,10 @@ switch(current_house_upgrade)
 			_fifth_house_update = instance_create_depth(x, y, 0, obj_house_upgrade);
 			with(_fifth_house_update)
 			{
-				upgrade_description = "Grow and sell berries. Brings extra 125 $/s.";
-				upgrade_price = 10000;
+				upgrade_description = "Grow and sell berries. +150 $/s.";
+				upgrade_price = 100000;
 				
-				increased_amount_per_second = 125;
+				increased_amount_per_second = 150;
 				symbol_sprite = spr_upgrade_house_7;
 			}
 			house_upgrade_shown = true;
@@ -165,10 +165,10 @@ switch(current_house_upgrade)
 			_fifth_house_update = instance_create_depth(x, y, 0, obj_house_upgrade);
 			with(_fifth_house_update)
 			{
-				upgrade_description = "Grow the magical mushrooms. Extra 200 $/s.";
-				upgrade_price = 10000;
+				upgrade_description = "Grow the magical mushrooms. +300 $/s.";
+				upgrade_price = 125000;
 				
-				increased_amount_per_second = 200;
+				increased_amount_per_second = 300;
 				symbol_sprite = spr_upgrade_house_8;
 			}
 			house_upgrade_shown = true;
@@ -190,10 +190,10 @@ switch(current_efficacy_upgrade)
 			_first_eff_update = instance_create_depth(x, y, 0, obj_efficacy_upgrade);
 			with(_first_eff_update)
 			{
-				upgrade_description = "+10 % efficacy.";
+				upgrade_description = "Basic management. +20 % efficacy.";
 				upgrade_price = 10;
 				
-				increased_amount_multiplier = 0.1;
+				increased_amount_multiplier = 0.2;
 				symbol_sprite = spr_upgrade_efficacy_1;
 			}
 			efficacy_upgrade_shown = true;
@@ -212,10 +212,10 @@ switch(current_efficacy_upgrade)
 			_second_eff_update = instance_create_depth(x, y, 0, obj_efficacy_upgrade);
 			with(_second_eff_update)
 			{
-				upgrade_description = "+20 % efficacy.";
+				upgrade_description = "Improved management. +30 % efficacy.";
 				upgrade_price = 200;
 				
-				increased_amount_multiplier = 0.2;
+				increased_amount_multiplier = 0.3;
 				symbol_sprite = spr_upgrade_efficacy_2;
 			}
 			efficacy_upgrade_shown = true;
@@ -234,10 +234,10 @@ switch(current_efficacy_upgrade)
 			_third_eff_update = instance_create_depth(x, y, 0, obj_efficacy_upgrade);
 			with(_third_eff_update)
 			{
-				upgrade_description = "+30 % efficacy.";
+				upgrade_description = "PhD from management. +40 % efficacy.";
 				upgrade_price = 500;
 				
-				increased_amount_multiplier = 0.3;
+				increased_amount_multiplier = 0.4;
 				symbol_sprite = spr_upgrade_efficacy_3;
 			}
 			efficacy_upgrade_shown = true;
@@ -256,10 +256,10 @@ switch(current_efficacy_upgrade)
 			_fourth_eff_update = instance_create_depth(x, y, 0, obj_efficacy_upgrade);
 			with(_fourth_eff_update)
 			{
-				upgrade_description = "+40 % efficacy.";
+				upgrade_description = "Finall boss of management. +50 % efficacy.";
 				upgrade_price = 10000;
 				
-				increased_amount_multiplier = 0.4;
+				increased_amount_multiplier = 0.5;
 				symbol_sprite = spr_upgrade_efficacy_4;
 			}
 			efficacy_upgrade_shown = true;
@@ -278,10 +278,10 @@ switch(current_efficacy_upgrade)
 			_fifth_eff_update = instance_create_depth(x, y, 0, obj_efficacy_upgrade);
 			with(_fifth_eff_update)
 			{
-				upgrade_description = "+50 % efficacy.";
+				upgrade_description = "Double shifts. +60 % efficacy.";
 				upgrade_price = 25000;
 				
-				increased_amount_multiplier = 0.5;
+				increased_amount_multiplier = 0.6;
 				symbol_sprite = spr_upgrade_efficacy_5;
 			}
 			efficacy_upgrade_shown = true;
@@ -300,7 +300,7 @@ switch(current_efficacy_upgrade)
 			_fifth_eff_update = instance_create_depth(x, y, 0, obj_efficacy_upgrade);
 			with(_fifth_eff_update)
 			{
-				upgrade_description = "+75 % efficacy.";
+				upgrade_description = "New machines. +75 % efficacy.";
 				upgrade_price = 50000;
 				
 				increased_amount_multiplier = 0.75;
@@ -322,10 +322,10 @@ switch(current_efficacy_upgrade)
 			_fifth_eff_update = instance_create_depth(x, y, 0, obj_efficacy_upgrade);
 			with(_fifth_eff_update)
 			{
-				upgrade_description = "+100 % efficacy.";
+				upgrade_description = "New computer systems. +150 % efficacy.";
 				upgrade_price = 100000;
 				
-				increased_amount_multiplier = 1;
+				increased_amount_multiplier = 1.5;
 				symbol_sprite = spr_upgrade_efficacy_7;
 			}
 			efficacy_upgrade_shown = true;
@@ -344,10 +344,10 @@ switch(current_efficacy_upgrade)
 			_fifth_eff_update = instance_create_depth(x, y, 0, obj_efficacy_upgrade);
 			with(_fifth_eff_update)
 			{
-				upgrade_description = "+200 % efficacy.";
-				upgrade_price = 200000;
+				upgrade_description = "Borderline exploitation. +300 % efficacy.";
+				upgrade_price = 125000;
 				
-				increased_amount_multiplier = 2;
+				increased_amount_multiplier = 3;
 				symbol_sprite = spr_upgrade_efficacy_8;
 			}
 			efficacy_upgrade_shown = true;

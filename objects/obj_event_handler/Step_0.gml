@@ -49,14 +49,8 @@ switch (current_event)
 			text = "Long Live Postria!" + "\n" + "\n" + "This is just a friendly letter from the Tax Office. We are delighted to see how well your business is doing. Regulations now require you to share 50 % of your profit right away and then to share 25 % of your profit from now on as a tax in order to make sure you contribute fairly to the common wealth of our glorious country." + "\n" + "As we already mentioned - no business is small business in Postria. We support the growth of every business." + "\n" + "\n" + "Obligatory information:" + "\n" + "Please be aware of the fact that reading letters is obligatory and ignoring them can be penalised up to 250 $ per second." + "\n" + "\n" + "Long Live Postria!";
 		}
 		
-		_half_the_money = (obj_variable_handler.currency_amount / 2);
-		obj_variable_handler.currency_amount = _half_the_money;
-		
-		_effectivity_reducement = (obj_variable_handler.amount_per_second * 0.75);
-		obj_variable_handler.amount_per_second = _effectivity_reducement;
-		
 		current_event += 1;
-		countdown = 400;
+		countdown = 1;
 	break;
 	
 	case 5:
@@ -67,9 +61,14 @@ switch (current_event)
 				countdown -= 1;
 			} else
 			{
+				_half_the_money = (obj_variable_handler.currency_amount / 2);
+				obj_variable_handler.currency_amount = _half_the_money;
+		
+				_effectivity_reducement = (obj_variable_handler.amount_per_second * 0.75);
+				obj_variable_handler.amount_per_second = _effectivity_reducement;
 		
 				current_event += 1;
-				countdown = 600;
+				countdown = 1000;
 			}
 		}
 	break;
@@ -475,14 +474,17 @@ switch (current_event)
 	case 24:
 		if !instance_exists(obj_letter_envelope) && !instance_exists(obj_letter_paper)
 		{
-			_inst = instance_create_depth(x, y, 0, obj_letter_envelope);
-			with(_inst)
+			if obj_variable_handler.currency_amount > 250000
 			{
-				title = "Tax Office";
-				text = "Long Live Postria!" + "\n" + "\n" + "All of your assets have been forfeited due to the suspicion of not contributing your fair share for the wellbeing of your fellow citizens." + "\n" + "Please be aware of the fact that reading letters is obligatory and ignoring them can be penalised up to 250 $ per second." + "\n" + "\n" + "Long Live Postria!";
+				_inst = instance_create_depth(x, y, 0, obj_letter_envelope);
+				with(_inst)
+				{
+					title = "Tax Office";
+					text = "Long Live Postria!" + "\n" + "\n" + "All of your assets have been forfeited due to the suspicion of not contributing your fair share for the wellbeing of your fellow citizens." + "\n" + "Please be aware of the fact that reading letters is obligatory and ignoring them can be penalised up to 250 $ per second." + "\n" + "\n" + "Long Live Postria!";
+				}
+				countdown = 0;
+				current_event += 1;
 			}
-			countdown = 0;
-			current_event += 1;
 		}
 	break;
 	
