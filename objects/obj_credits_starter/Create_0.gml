@@ -18,14 +18,14 @@ credits_ended = false;
 // Texts
 first_text = "Better Tomorrows";
 second_text = "Made by DzejPi for Ludum Dare 49."
-third_text = "Third line.";
-fourth_text = "Fourth line.";
-fifth_text = "Fifth line.";
-sixth_text = "Sixth line.";
-seventh_text = "Seventh line.";
-eigth_text = "Eighth line.";
-ninth_text = "Ninth line.";
-tenth_text = "Tenth line.";
+third_text = "Dedicated to Kate <3.";
+fourth_text = "Special shout-out to:";
+fifth_text = "~ Neutral Face ~ as always for everything you do for me.";
+sixth_text = "Andy for being Andy and letting me sleep this Jam.";
+seventh_text = "C0rn3j, Majky & Stadtpark.";
+eigth_text = "All NATOCO guys. Can't image my life without you!";
+ninth_text = "My special rainbow group. You know who you are.";
+tenth_text = "All guys and gals in Supernova. You rock!";
 
 middle_x = room_width/2;
 
