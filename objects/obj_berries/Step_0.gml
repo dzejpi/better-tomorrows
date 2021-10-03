@@ -4,7 +4,7 @@ if !picked
 {
 	image_index = 0;
 	
-	if position_meeting(mouse_x, mouse_y, self)
+	if !instance_exists(obj_letter_envelope) && !instance_exists(obj_letter_paper) && position_meeting(mouse_x, mouse_y, self) && !picked
 	{
 		obj_cursor_handler.tooltip = tooltip;
 		
