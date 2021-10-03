@@ -19,4 +19,9 @@ if !picked
 } else
 {
 	image_index = 1;
+	
+	if !instance_exists(obj_letter_envelope) && !instance_exists(obj_letter_paper) && position_meeting(mouse_x, mouse_y, self)
+	{
+		obj_cursor_handler.tooltip = "";
+	}
 }

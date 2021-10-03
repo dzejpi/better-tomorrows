@@ -13,7 +13,7 @@ if !picked
 			picked = true;
 			obj_variable_handler.currency_amount += price;
 			
-			obj_cursor_handler.tooltip = tooltip;
+			obj_cursor_handler.tooltip = "";
 		}
 	}
 } else
