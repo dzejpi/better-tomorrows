@@ -461,11 +461,45 @@ switch (current_event)
 	break;
 	
 	case 29:
-		
+		if !instance_exists(obj_letter_envelope) && !instance_exists(obj_letter_paper)
+		{
+			_inst = instance_create_depth(x, y, 0, obj_letter_envelope);
+			with(_inst)
+			{
+				title = "Friendly Neighbor";
+				text = "Hey! Have you assets been confiscated as well? I have absolutely nothing." + "\n" + "I have a really bad feeling about this situation. We should leave as quickly as we can. This will get very bad." + "\n" + "I know a guy that can smug us out of this god forsaken country for 100 $." + "\n" + "If you can make it quickly somehow, see me immediately. But hurry, before they lock you up!" + "Your Neighbour.";
+			}
+			current_event += 1;
+		}	
 	break;
 	
 	case 30:
-		
+		if !instance_exists(obj_letter_envelope) && !instance_exists(obj_letter_paper)
+		{
+			if end_game_countdown > 0
+			{
+				end_game_countdown -= 1;
+			
+				seconds_left = ceil(end_game_countdown/60);
+				obj_variable_handler.current_objective = "Get 100 $ somehow. Time left: " + string(seconds_left);
+			} else
+			{
+				// Bad ending
+				if obj_variable_handler.currency_amount < 100
+				{
+					instance_create_depth(x, y, 0, obj_next_room_fade_in);
+					obj_next_room_fade_in.displayed_text = "Authorities found you.";
+					obj_next_room_fade_in.secondary_text = "You are in jail awaiting your trial.";
+					
+				} else
+				{
+					instance_create_depth(x, y, 0, obj_next_room_fade_in);
+					obj_next_room_fade_in.displayed_text = "You went to your neighbor.";
+					obj_next_room_fade_in.secondary_text = "Can you trust them? You will see.";
+				}
+				current_event += 1;
+			}
+		}
 	break;
 }
 
