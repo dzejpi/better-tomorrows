@@ -6,7 +6,7 @@ if countdown_to_disappearance > 0
 } else
 {
 	// Play explosion
-	// snd...
+	audio_play_sound(snd_explosion_two, 1, false);
 	
 	instance_destroy();
 }

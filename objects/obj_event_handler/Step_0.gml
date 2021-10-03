@@ -77,7 +77,7 @@ switch (current_event)
 	case 6:
 		// UFO here
 		instance_create_depth(x - 60, y, 0, obj_ufo);
-		countdown = 600;
+		countdown = 900;
 		current_event += 1;
 	break;
 	
