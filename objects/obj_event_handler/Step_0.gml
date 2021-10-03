@@ -433,31 +433,89 @@ switch (current_event)
 	break;
 	
 	case 22:
-		
+		if obj_variable_handler.currency_amount > 30000
+		{
+			current_event += 1;
+		}
 	break;
 	
 	case 23:
+		// Rocket impact close to the home.
+		_rocket_very_close = instance_create_depth(600, (-400), 0, obj_rocket);
+		with(_rocket_very_close)
+		{
+			impact_x = 517;
+			impact_y = 979;
+		}
 		
+		current_event += 1;
 	break;
 	
 	case 24:
-		
+		if !instance_exists(obj_letter_envelope) && !instance_exists(obj_letter_paper)
+		{
+			_inst = instance_create_depth(x, y, 0, obj_letter_envelope);
+			with(_inst)
+			{
+				title = "Tax Office";
+				text = "Long Live Postria!" + "\n" + "\n" + "All of your assets have been forfeited due to the suspicion of not contributing your fair share for the wellbeing of your fellow citizens." + "\n" + "Please be aware of the fact that reading letters is obligatory and ignoring them can be penalised up to 250 $ per second." + "\n" + "\n" + "Long Live Postria!";
+			}
+			countdown = 0;
+			current_event += 1;
+		}
 	break;
 	
 	case 25:
-		
+		if !instance_exists(obj_letter_envelope) && !instance_exists(obj_letter_paper)
+		{
+			countdown = 120;
+			current_event += 1;
+
+			obj_variable_handler.currency_amount = 0;
+			obj_variable_handler.amount_per_second = 0;
+		}
 	break;
 	
 	case 26:
-		
+		if countdown > 0
+		{
+			countdown -= 1;
+		} else
+		{
+			current_event += 1;
+			countdown = 600;
+		}
 	break;
 	
 	case 27:
-		
+		if !instance_exists(obj_letter_envelope) && !instance_exists(obj_letter_paper)
+		{
+			_inst = instance_create_depth(x, y, 0, obj_letter_envelope);
+			with(_inst)
+			{
+				title = "Security Department";
+				text = "Long Live Postria!" + "\n" + "\n" + "Due to the suspicion of the anti-state crime, you are required t come to the questioning immediately. Failure to show up will be punished into the full consequences of the law." + "\n" + "Please be aware of the fact that reading letters is obligatory and ignoring them can be penalised up to 250 $ per second." + "\n" + "\n" + "Long Live Postria!";
+			}
+			countdown = 120;
+			current_event += 1;
+
+			obj_variable_handler.currency_amount = 0;
+			obj_variable_handler.amount_per_second = 0;
+		}
 	break;
 	
 	case 28:
-		
+		if !instance_exists(obj_letter_envelope) && !instance_exists(obj_letter_paper)
+		{
+			if countdown > 0
+			{
+				countdown -= 1;
+			} else
+			{
+				current_event += 1;
+				countdown = 600;
+			}
+		}
 	break;
 	
 	case 29:
