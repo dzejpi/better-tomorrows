@@ -50,9 +50,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.8156494"
-     inkscape:cx="859.69649"
-     inkscape:cy="843.65302"
+     inkscape:zoom="0.84906098"
+     inkscape:cx="894.22103"
+     inkscape:cy="787.64032"
      inkscape:document-units="px"
      inkscape:current-layer="layer30"
      inkscape:document-rotation="0"
@@ -1115,7 +1115,8 @@ AK/vGv6ZmQ/dvSSNDgaWggAAAABJRU5ErkJggg==
      inkscape:groupmode="layer"
      id="layer18"
      inkscape:label="Mushroom Edible"
-     style="display:inline">
+     style="display:inline"
+     sodipodi:insensitive="true">
     <path
        style="opacity:1;fill:#212121;fill-opacity:1;stroke:#fafafa;stroke-width:1.32292;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 275.16667,105.83334 v 4.23333"
@@ -1597,7 +1598,8 @@ AK/vGv6ZmQ/dvSSNDgaWggAAAABJRU5ErkJggg==
      inkscape:groupmode="layer"
      id="g2218"
      inkscape:label="Mushroom Inedible"
-     style="display:inline">
+     style="display:inline"
+     sodipodi:insensitive="true">
     <path
        style="opacity:1;fill:#212121;fill-opacity:1;stroke:#fafafa;stroke-width:1.32292;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 292.1,105.83334 v 4.23333"
@@ -2465,7 +2467,8 @@ AK/vGv6ZmQ/dvSSNDgaWggAAAABJRU5ErkJggg==
      inkscape:groupmode="layer"
      id="layer28"
      inkscape:label="Upgrade Window"
-     style="display:none">
+     style="display:none"
+     sodipodi:insensitive="true">
     <image
        width="33.866669"
        height="33.866669"
@@ -2481,7 +2484,8 @@ AK/vGv6ZmQ/dvSSNDgaWggAAAABJRU5ErkJggg==
      inkscape:groupmode="layer"
      id="layer27"
      inkscape:label="Upgrade Symbols House"
-     style="display:none">
+     style="display:none"
+     sodipodi:insensitive="true">
     <path
        style="opacity:1;fill:none;fill-opacity:1;stroke:#fafafa;stroke-width:1.32292;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        d="M 258.23333,256.11666 266.7,247.65 l 8.46666,8.46666"
@@ -2517,7 +2521,8 @@ AK/vGv6ZmQ/dvSSNDgaWggAAAABJRU5ErkJggg==
      inkscape:groupmode="layer"
      id="layer29"
      inkscape:label="Upgrade Symbols Efficacy"
-     style="display:none">
+     style="display:none"
+     sodipodi:insensitive="true">
     <path
        style="opacity:1;fill:#fafafa;fill-opacity:1;stroke:#fafafa;stroke-width:1.32292;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        d="m 254.52918,258.23334 v -8.46667 h 4.23333 v 8.46667 z"
