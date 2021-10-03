@@ -1,4 +1,7 @@
 /// @description Insert description here
-// You can write your code in this editor
-current_event = 1;
+// For testing. Change to 1 when finished.
+current_event = 12;
 
+countdown = 0;
+
+obj_variable_handler.currency_amount = 770;
