@@ -219,17 +219,14 @@ switch (current_event)
 	break;
 	
 	case 14:
-		if countdown > 0
-		{
-			countdown -= 1;
-		} else
+		if !instance_exists(obj_letter_envelope) && !instance_exists(obj_letter_paper)
 		{
 			// Rocket impact close to the home.
 			_rocket_close = instance_create_depth(600, (-400), 0, obj_rocket);
 			with(_rocket_close)
 			{
 				impact_x = 1500;
-				impact_y = 800;
+				impact_y = 1000;
 			}
 			
 			current_event += 1;
