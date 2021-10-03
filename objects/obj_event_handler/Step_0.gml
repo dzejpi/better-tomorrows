@@ -467,7 +467,7 @@ switch (current_event)
 			with(_inst)
 			{
 				title = "Friendly Neighbor";
-				text = "Hey! Have you assets been confiscated as well? I have absolutely nothing." + "\n" + "I have a really bad feeling about this situation. We should leave as quickly as we can. This will get very bad." + "\n" + "I know a guy that can smug us out of this god forsaken country for 100 $." + "\n" + "If you can make it quickly somehow, see me immediately. But hurry, before they lock you up!" + "Your Neighbour.";
+				text = "Hey! Have your assets been confiscated as well? I have absolutely nothing." + "\n" + "I have a really bad feeling about this situation. We should leave as quickly as we can. This will get very bad." + "\n" + "I know a guy that can smug us out of this god forsaken country for 100 $." + "\n" + "If you can make it quickly somehow, see me immediately. But hurry, before they lock you up!" + "\n" + "Good luck. Forest is your friend." + "\n" + "\n" + "Your Neighbour.";
 			}
 			current_event += 1;
 		}	
@@ -485,7 +485,7 @@ switch (current_event)
 			} else
 			{
 				// Bad ending
-				if obj_variable_handler.currency_amount < 100
+				if obj_variable_handler.currency_amount < 150
 				{
 					instance_create_depth(x, y, 0, obj_next_room_fade_in);
 					obj_next_room_fade_in.displayed_text = "Authorities found you.";
