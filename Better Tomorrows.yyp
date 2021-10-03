@@ -42,6 +42,7 @@
     {"id":{"name":"spr_menu_button","path":"sprites/spr_menu_button/spr_menu_button.yy",},"order":0,},
     {"id":{"name":"spr_tree","path":"sprites/spr_tree/spr_tree.yy",},"order":0,},
     {"id":{"name":"spr_mushroom_inedible","path":"sprites/spr_mushroom_inedible/spr_mushroom_inedible.yy",},"order":4,},
+    {"id":{"name":"snd_click","path":"sounds/snd_click/snd_click.yy",},"order":5,},
     {"id":{"name":"spr_razor_fence","path":"sprites/spr_razor_fence/spr_razor_fence.yy",},"order":5,},
     {"id":{"name":"spr_upgrade_efficacy_1","path":"sprites/spr_upgrade_efficacy_1/spr_upgrade_efficacy_1.yy",},"order":5,},
     {"id":{"name":"font_medium_text","path":"fonts/font_medium_text/font_medium_text.yy",},"order":5,},

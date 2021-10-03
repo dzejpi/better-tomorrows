@@ -28,7 +28,7 @@ if is_selectable
 	{	
 		if mouse_check_button(mb_left) && countdown_to_press = 0
 		{
-			//audio_play_sound(snd_button_select, 10, false);
+			audio_play_sound(snd_click, 1, false);
 			
 			obj_variable_handler.currency_amount -= upgrade_price;
 			is_pressed = true;

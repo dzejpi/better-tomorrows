@@ -13,3 +13,5 @@ letter_spawned = false;
 depth = -4;
 
 tooltip = "Open the letter.";
+
+audio_play_sound(snd_click, 1, false);
