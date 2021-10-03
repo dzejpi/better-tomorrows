@@ -11,4 +11,7 @@ impact_y = 500;
 time_to_appear = 60;
 image_alpha = 0;
 
-audio_play_sound(snd_explosion_three, 1, false);
+if irandom_range(1, 5) = 5 
+{
+	audio_play_sound(snd_explosion_three, 1, false);
+}
