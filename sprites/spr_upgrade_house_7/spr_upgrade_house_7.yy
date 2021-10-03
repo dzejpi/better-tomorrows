@@ -7,9 +7,9 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 24,
-  "bbox_right": 100,
-  "bbox_top": 28,
+  "bbox_left": 21,
+  "bbox_right": 104,
+  "bbox_top": 27,
   "bbox_bottom": 95,
   "HTile": false,
   "VTile": false,
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"dd2b7f88-f0bb-4d39-9d47-8049b9a22851","path":"sprites/spr_upgrade_house_7/spr_upgrade_house_7.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"dd2b7f88-f0bb-4d39-9d47-8049b9a22851","path":"sprites/spr_upgrade_house_7/spr_upgrade_house_7.yy",},"LayerId":{"name":"57c31398-f165-4e61-8ce2-da09013ab50a","path":"sprites/spr_upgrade_house_7/spr_upgrade_house_7.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_upgrade_house_7","path":"sprites/spr_upgrade_house_7/spr_upgrade_house_7.yy",},"resourceVersion":"1.0","name":"dd2b7f88-f0bb-4d39-9d47-8049b9a22851","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"7ee64d58-40f0-4ff1-ae64-ed89c9a00dd4","path":"sprites/spr_upgrade_house_7/spr_upgrade_house_7.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"7ee64d58-40f0-4ff1-ae64-ed89c9a00dd4","path":"sprites/spr_upgrade_house_7/spr_upgrade_house_7.yy",},"LayerId":{"name":"894bcecb-d759-42c3-81d7-9579832a74dc","path":"sprites/spr_upgrade_house_7/spr_upgrade_house_7.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_upgrade_house_7","path":"sprites/spr_upgrade_house_7/spr_upgrade_house_7.yy",},"resourceVersion":"1.0","name":"7ee64d58-40f0-4ff1-ae64-ed89c9a00dd4","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_upgrade_house_7","path":"sprites/spr_upgrade_house_7/spr_upgrade_house_7.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"1f33ca2a-c8ba-4972-a7f9-dee33a0bd7a1","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"dd2b7f88-f0bb-4d39-9d47-8049b9a22851","path":"sprites/spr_upgrade_house_7/spr_upgrade_house_7.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"d2dbe9f1-a1ce-4935-add9-5f8849b675de","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7ee64d58-40f0-4ff1-ae64-ed89c9a00dd4","path":"sprites/spr_upgrade_house_7/spr_upgrade_house_7.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"57c31398-f165-4e61-8ce2-da09013ab50a","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"894bcecb-d759-42c3-81d7-9579832a74dc","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {

@@ -165,10 +165,10 @@ switch(current_house_upgrade)
 			_fifth_house_update = instance_create_depth(x, y, 0, obj_house_upgrade);
 			with(_fifth_house_update)
 			{
-				upgrade_description = "Grow the magical mushrooms. +300 $/s.";
+				upgrade_description = "Grow the magical mushrooms. +400 $/s.";
 				upgrade_price = 125000;
 				
-				increased_amount_per_second = 300;
+				increased_amount_per_second = 400;
 				symbol_sprite = spr_upgrade_house_8;
 			}
 			house_upgrade_shown = true;
@@ -344,10 +344,10 @@ switch(current_efficacy_upgrade)
 			_fifth_eff_update = instance_create_depth(x, y, 0, obj_efficacy_upgrade);
 			with(_fifth_eff_update)
 			{
-				upgrade_description = "Borderline exploitation. +300 % efficacy.";
+				upgrade_description = "Borderline exploitation. +500 % efficacy.";
 				upgrade_price = 125000;
 				
-				increased_amount_multiplier = 3;
+				increased_amount_multiplier = 5;
 				symbol_sprite = spr_upgrade_efficacy_8;
 			}
 			efficacy_upgrade_shown = true;
