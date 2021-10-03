@@ -37,6 +37,7 @@ switch (current_event)
 	case 3:
 		if obj_variable_handler.currency_amount > 500
 		{
+			obj_variable_handler.current_objective = "Make money and explore!";
 			current_event += 1;
 		}
 	break;
@@ -49,6 +50,7 @@ switch (current_event)
 			text = "Long Live Postria!" + "\n" + "\n" + "This is just a friendly letter from the Tax Office. We are delighted to see how well your business is doing. Regulations now require you to share 50 % of your profit right away and then to share 25 % of your profit from now on as a tax in order to make sure you contribute fairly to the common wealth of our glorious country." + "\n" + "As we already mentioned - no business is small business in Postria. We support the growth of every business." + "\n" + "\n" + "Obligatory information:" + "\n" + "Please be aware of the fact that reading letters is obligatory and ignoring them can be penalised up to 250 $ per second." + "\n" + "\n" + "Long Live Postria!";
 		}
 		
+		obj_variable_handler.current_objective = "Read the letter.";
 		current_event += 1;
 		countdown = 1;
 	break;
@@ -67,6 +69,7 @@ switch (current_event)
 				_effectivity_reducement = (obj_variable_handler.amount_per_second * 0.75);
 				obj_variable_handler.amount_per_second = _effectivity_reducement;
 		
+				obj_variable_handler.current_objective = "";
 				current_event += 1;
 				countdown = 1000;
 			}
@@ -109,6 +112,7 @@ switch (current_event)
 					impact_y = camera_get_view_x(view_camera[0]) + camera_get_view_height(view_camera[0]) + 500;
 				}
 			
+				obj_variable_handler.current_objective = "Read the letter.";
 				current_event += 1;
 				countdown = 600;
 			}
@@ -127,6 +131,8 @@ switch (current_event)
 				title = "Security Department";
 				text = "Long Live Postria!" + "\n" + "\n" + "Our authorities are currently investigating some sort of crash that happened nearby." + "\n" + "Postria authorities are already trying to determine the cause of the crash. Crash has all the signs of the rocket attack possibly coming from Aman." + "\n" + "You can continue with the business as usual. Postria authorities are here to protect you and your valuable business." + "\n" + "\n" + "Obligatory information:" + "\n" + "Please be aware of the fact that reading letters is obligatory and ignoring them can be penalised up to 250 $ per second." + "\n" + "\n" + "Long Live Postria!";
 			}
+			
+			obj_variable_handler.current_objective = "Read the letter.";
 			countdown = 0;
 			current_event += 1;
 			
@@ -137,6 +143,8 @@ switch (current_event)
 	case 10:
 		if !instance_exists(obj_letter_envelope) && !instance_exists(obj_letter_paper)
 		{
+			obj_variable_handler.current_objective = "";
+			
 			if countdown > 0
 			{
 				countdown -= 1;
@@ -159,6 +167,8 @@ switch (current_event)
 		
 		_effectivity_increase = (obj_variable_handler.amount_multiplier * 1.75);
 		obj_variable_handler.amount_multiplier = _effectivity_increase;
+		
+		obj_variable_handler.current_objective = "Read the letter.";
 			
 		countdown = 600;
 	break;
@@ -173,6 +183,8 @@ switch (current_event)
 			{
 				if obj_variable_handler.currency_amount > 780
 				{
+					obj_variable_handler.current_objective = "";
+					
 					_rocket_one = instance_create_depth(camera_get_view_x(view_camera[0]) - 350, camera_get_view_x(view_camera[0]) - 400, 0, obj_rocket);
 					with(_rocket_one)
 					{
@@ -228,6 +240,8 @@ switch (current_event)
 				text = "Long Live Postria!" + "\n" + "\n" + "We have detected several rocket launches and hits on the sovereign territory of Postria in a proximity of your location." + "\n" + "We have confirmed that the rockets are coming from the Aman." + "\n" + "Security Department wants to let you know that it will do everything to protect you and your business." + "\n" + "\n" + "Obligatory information:" + "\n" + "Please be aware of the fact that reading letters is obligatory and ignoring them can be penalised up to 250 $ per second." + "\n" + "\n" + "Long Live Postria!";
 			}
 			
+			obj_variable_handler.current_objective = "Read the letter.";
+			
 			current_event += 1;
 			countdown = 450;
 		}
@@ -236,6 +250,8 @@ switch (current_event)
 	case 14:
 		if !instance_exists(obj_letter_envelope) && !instance_exists(obj_letter_paper)
 		{
+			obj_variable_handler.current_objective = "";
+			
 			// Rocket impact close to the home.
 			_rocket_close = instance_create_depth(600, (-400), 0, obj_rocket);
 			with(_rocket_close)
@@ -265,6 +281,7 @@ switch (current_event)
 				text = "Long Live Postria!" + "\n" + "\n" + "Due to the increased tensions, we have decided to put up a razor fence for your own safety." + "\n" + "All activity with Aman border was closed and everybody seen crossing the border or trying to approach Postria border will be shot on sight." + "\n" + "Security Department wants to let you know that it will do everything to protect you and your business." + "\n" + "\n" + "Obligatory information:" + "\n" + "Please be aware of the fact that reading letters is obligatory and ignoring them can be penalised up to 250 $ per second." + "\n" + "\n" + "Long Live Postria!";
 			}
 			
+			obj_variable_handler.current_objective = "Read the letter.";
 			current_event += 1;
 			countdown = 600;
 		}
@@ -274,6 +291,7 @@ switch (current_event)
 	case 16:
 		if !instance_exists(obj_letter_envelope) && !instance_exists(obj_letter_paper)
 		{
+			obj_variable_handler.current_objective = "";
 			if countdown > 0
 			{
 				countdown -= 1;
@@ -307,6 +325,7 @@ switch (current_event)
 				text = "Long Live Postria!" + "\n" + "\n" + "Several citizens reported a sporadic gunfire on the Postria border." + "\n" + "The war on Aman was declared. All borders with Aman were closed and everybody seen crossing the border or trying to approach Postria border will be shot on sight." + "\n" + "Security Department wants to let you know that it will do everything to protect you and your business." + "\n" + "\n" + "Obligatory information:" + "\n" + "Please be aware of the fact that reading letters is obligatory and ignoring them can be penalised up to 250 $ per second." + "\n" + "\n" + "Long Live Postria!";
 			}
 			
+			obj_variable_handler.current_objective = "Read the letter.";
 			current_event += 1;
 		}
 	break;
@@ -320,6 +339,8 @@ switch (current_event)
 				is_shooting_right = false;
 				fire_intensity = 100;
 			}
+			
+			obj_variable_handler.current_objective = "";
 			
 			// Rocket impact close to the home.
 			_rocket_close = instance_create_depth(600, (-400), 0, obj_rocket);
@@ -348,6 +369,8 @@ switch (current_event)
 			}
 			countdown = 0;
 			current_event += 1;
+			
+			obj_variable_handler.current_objective = "Read the letter.";
 		
 			_half_the_money = (obj_variable_handler.currency_amount / 2);
 			obj_variable_handler.currency_amount = _half_the_money;
@@ -362,6 +385,7 @@ switch (current_event)
 	case 20:
 		if !instance_exists(obj_letter_envelope) && !instance_exists(obj_letter_paper)
 		{
+			obj_variable_handler.current_objective = "";
 			if countdown > 0
 			{
 				countdown -= 1;
@@ -482,6 +506,8 @@ switch (current_event)
 					title = "Tax Office";
 					text = "Long Live Postria!" + "\n" + "\n" + "All of your assets have been forfeited due to the suspicion of not contributing your fair share for the wellbeing of your fellow citizens." + "\n" + "Please be aware of the fact that reading letters is obligatory and ignoring them can be penalised up to 250 $ per second." + "\n" + "\n" + "Long Live Postria!";
 				}
+				obj_variable_handler.current_objective = "Read the letter.";
+				
 				countdown = 0;
 				current_event += 1;
 			}
@@ -491,6 +517,8 @@ switch (current_event)
 	case 25:
 		if !instance_exists(obj_letter_envelope) && !instance_exists(obj_letter_paper)
 		{
+			obj_variable_handler.current_objective = "";
+			
 			countdown = 120;
 			current_event += 1;
 
@@ -525,6 +553,8 @@ switch (current_event)
 			countdown = 120;
 			current_event += 1;
 
+			obj_variable_handler.current_objective = "Read the letter.";
+
 			obj_variable_handler.currency_amount = 0;
 			obj_variable_handler.amount_per_second = 0;
 		}
@@ -533,6 +563,8 @@ switch (current_event)
 	case 28:
 		if !instance_exists(obj_letter_envelope) && !instance_exists(obj_letter_paper)
 		{
+			obj_variable_handler.current_objective = "";
+			
 			if countdown > 0
 			{
 				countdown -= 1;
@@ -547,6 +579,8 @@ switch (current_event)
 	case 29:
 		if !instance_exists(obj_letter_envelope) && !instance_exists(obj_letter_paper)
 		{
+			obj_variable_handler.current_objective = "Read the letter.";
+			
 			_inst = instance_create_depth(x, y, 0, obj_letter_envelope);
 			with(_inst)
 			{
